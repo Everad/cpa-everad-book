@@ -6,4 +6,5 @@
 
 ## Methods
 
-* [Defining Methods](methods.md)
+* [Session](methods.md)
+
