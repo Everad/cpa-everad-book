@@ -1,4 +1,4 @@
-# Everad CPA v.2 Dashboard API
+# Everad CPA v2 Dashboard API
 
 This describes **API** for managing your affiliate account inside **Everad CPA** application.
 
