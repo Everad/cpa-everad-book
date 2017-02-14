@@ -5,6 +5,7 @@ Session data is passed over http cookie, returned to you on calling `login` or `
 ####`/session/register`
 
 Register your affiliate account and get session cookie at once
+
 `email`
 
 `password`
