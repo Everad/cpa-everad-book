@@ -12,7 +12,7 @@ All incoming data is passed using **JSON** format (with specified `Content-type:
 **Response Body** contains requested or error info (for `400` status codes)
 
 ####Base url
- `http://dashboard.everad.com`
+ `http://dashboard.everad.com/v2`
 
 #### Methods available:
 `/lists` - fetch available data enums, used in other endpoints

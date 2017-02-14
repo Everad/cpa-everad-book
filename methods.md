@@ -12,7 +12,7 @@ Register your affiliate account and get session cookie at once
 `language` - one from `/lists/languages`
 {% sample lang="bash" %}
 ```bash
-curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1", "language":"ru"}' -v http://dashboard.everad.com/session/register
+curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1", "language":"ru"}' -v http://dashboard.everad.com/v2/session/register
 ```
 ######success response
 ```
@@ -34,7 +34,7 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 Login to your already registered account
 {% sample lang="bash" %}
 ```bash
-curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1"}' -v http://dashboard.everad.com/session/login
+curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1"}' -v http://dashboard.everad.com/v2/session/login
 ```
 ######success response
 ```
@@ -53,7 +53,7 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 Logout from your account
 {% sample lang="bash" %}
 ```bash
-curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/session/logout
+curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/session/logout
 ```
 ######success response
 ```

@@ -6,7 +6,7 @@ endpoints for receiving different lists, used by other parts of API
 retrieve available response languages
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v http://dashboard.everad.com/lists/languages
+curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ```
 ######success response
 ```
