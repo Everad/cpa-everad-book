@@ -1,3 +1,12 @@
-# My Awesome API
+# EVERAD CPA v.2 Dashboard API
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+This describes API for managing your affiliate account inside Everad CPA application.
+
+API operates REST principles with some deviations described explicitly in method's description
+
+#### Methods available:
+
+`/session` - manange your current session and access permissions to internal methods
+
+
+
