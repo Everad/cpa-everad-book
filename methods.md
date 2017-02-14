@@ -1,5 +1,5 @@
 # Session
-manage your session section. Session data is passed over http cookie, returned to you on calling `login` or `register` endpoints
+Session data is passed over http cookie, returned to you on calling `login` or `register` endpoints
 ##Endpoints
 {% method %}
 ####`/session/register`
@@ -70,7 +70,8 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 < Content-Length: 21
 ["en","ru","ro","th"]
 ```
-{% endmethod %}{% method %}
+{% endmethod %}
+{% method %}
 ###`/session/change-language`
 change API language to one of `/languages`
 {% sample lang="bash" %}
