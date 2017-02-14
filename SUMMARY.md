@@ -2,7 +2,7 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
+* [Base principles](README.md)
 
 ## Methods
 
