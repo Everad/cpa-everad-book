@@ -65,6 +65,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 ```
 ######success response
 ```
+< HTTP/1.1 200 OK
 < Content-Type: application/json; charset=utf-8
 < Content-Length: 21
 ["en","ru","ro","th"]
@@ -78,8 +79,9 @@ curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix
 ```
 ######success response
 ```
+< HTTP/1.1 200 OK
 < Content-Type: application/json; charset=utf-8
-< Content-Length: 21
+< Content-Length: 0
 ["en","ru","ro","th"]
 ```
 {% endmethod %}
