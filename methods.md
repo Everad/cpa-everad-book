@@ -1,30 +1,18 @@
 # Session
 
-Methods allow you to smoothly display code examples in different languages.
+manage your session section. Session data is passed over http cookie, returned to you on calling `login` or `register` endpoints
+
+###Endpoints
 
 {% method %}
-## My first method
+`/session/register`
 
-My first method exposes how to print a message in JavaScript and Go.
+Register your affiliate account and get session cookie at once
 
-{% sample lang="js" %}
-Here is how to print a message to `stdout` using JavaScript.
-
-```js
-console.log('My first method');
-```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
-```
-
-{% common %}
-Whatever language you are using, the result will be the same.
+{% sample lang="bash" %}
+curl example.
 
 ```bash
-$ My first method
+console.log('My first method');
 ```
 {% endmethod %}
