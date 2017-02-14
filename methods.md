@@ -1,8 +1,8 @@
 # Session
 manage your session section. Session data is passed over http cookie, returned to you on calling `login` or `register` endpoints
-###Endpoints
+##Endpoints
 {% method %}
-`/session/register`
+####`/session/register`
 
 Register your affiliate account and get session cookie at once
 {% sample lang="bash" %}
@@ -13,7 +13,6 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 ```
 < HTTP/1.1 200 OK
 < set-cookie: connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
-< Date: Tue, 14 Feb 2017 08:49:53 GMT
 < Content-Length: 0
 ```
 ######error response
@@ -26,7 +25,7 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 ```
 {% endmethod %}
 {% method %}
-`/session/login`
+###`/session/login`
 Login to your already registered account
 {% sample lang="bash" %}
 ```bash
@@ -36,12 +35,51 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 ```
 < HTTP/1.1 200 OK
 < set-cookie: connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
-< Date: Tue, 14 Feb 2017 08:49:53 GMT
 < Content-Length: 0
 ```
 ######error response
 ```bash
 < HTTP/1.1 400 Bad Request
 < Content-Length: 0
+```
+{% endmethod %}
+{% method %}
+###`/session/logout`
+Logout from your account
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/session/logout
+```
+######success response
+```
+< HTTP/1.1 200 OK
+< Content-Length: 0
+```
+{% endmethod %}
+{% method %}
+###`/session/languages`
+retrieve available response languages
+{% sample lang="bash" %}
+```bash
+curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/session/languages
+```
+######success response
+```
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 21
+["en","ru","ro","th"]
+```
+{% endmethod %}{% method %}
+###`/session/change-language`
+change API language to one of `/languages`
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"language": "ru"}' http://dashboard.everad.com/session/change-language
+```
+######success response
+```
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 21
+["en","ru","ro","th"]
 ```
 {% endmethod %}
