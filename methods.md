@@ -82,6 +82,10 @@ curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix
 < HTTP/1.1 200 OK
 < Content-Type: application/json; charset=utf-8
 < Content-Length: 0
-["en","ru","ro","th"]
+```
+######error response
+```bash
+< HTTP/1.1 400 Bad Request
+< Content-Length: 0
 ```
 {% endmethod %}
