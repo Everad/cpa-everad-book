@@ -8,10 +8,10 @@
 
 * [Lists](lists.md)
 * [Session](methods.md)
-* [Profile](profile.md)
+* [Spaces](spaces.md)
 * [News](news.md)
 * [Offers](offers.md)
-* [Spaces](spaces.md)
 * [Campaigns](campaigns.md)
+* [Profile](profile.md)
 * [Support](support.md)
 
