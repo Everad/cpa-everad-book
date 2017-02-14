@@ -15,8 +15,14 @@ All incoming data is passed using **JSON** format (with specified `Content-type:
  `http://dashboard.everad.com`
 
 #### Methods available:
-
+`/lists` - fetch available data enums, used in other endpoints
 `/session` - manange your current session and access permissions to internal methods
+`/profile` - manage profile data (contacts, payments, language info)
+`/news` - fetch current news
+`/offers` - fetch available offers, manage your current offer permissions
+`/spaces` - manage your personal spaces for groupping your incoming traffic
+`/campaigns` - manage your campaigns
+`/support` - manage your support requests
 
 
 
