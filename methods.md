@@ -13,6 +13,6 @@ Register your affiliate account and get session cookie at once
 curl example.
 
 ```bash
-console.log('My first method');
+curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1"}' -v http://localhost:4001/session/register
 ```
 {% endmethod %}

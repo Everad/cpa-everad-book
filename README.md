@@ -11,6 +11,9 @@ All incoming data is passed using **JSON** format (with specified `Content-type:
 
 **Response Body** contains requested or error info (for `400` status codes)
 
+####Base url
+ `http://dashboard.everad.com`
+
 #### Methods available:
 
 `/session` - manange your current session and access permissions to internal methods
