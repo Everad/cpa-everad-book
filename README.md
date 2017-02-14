@@ -9,6 +9,8 @@ All incoming data is passed using **JSON** format (with specified `Content-type:
 ####Response useable data:
 **HTTP Status Code** indicates whether your request was successfuly processed (`200`, `201` codes) or ended with error (`400` - bad income data, `403` - you have no permission to access requested endpoint, `500` - internal server error, need to contuct support)
 
+**Response Body** contains requested or error info (for `400` status codes)
+
 #### Methods available:
 
 `/session` - manange your current session and access permissions to internal methods
