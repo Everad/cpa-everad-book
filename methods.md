@@ -6,7 +6,9 @@ Session data is passed over http cookie, returned to you on calling `login` or `
 
 Register your affiliate account and get session cookie at once
 `email`
+
 `password`
+
 `language` - one from `/lists/languages`
 {% sample lang="bash" %}
 ```bash
