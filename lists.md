@@ -35,6 +35,12 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 {% method %}
 ###`GET /lists/traffic-sources`
 {% endmethod %}
+{% method %}
+###`GET /lists/affiliate-statuses`
+{% endmethod %}
+
+
+
 
 
 
