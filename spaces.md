@@ -30,7 +30,7 @@ curl -X POST -d '{"title":"test space", "type":"social"}' -b 'connect.sid=s%3AL7
 ```
 {% endmethod %}
 {% method %}
-####`PUT /spaces/1`
+####`PUT /spaces/<id>`
 
 update space
 {% sample lang="bash" %}
@@ -44,7 +44,7 @@ curl -X PUT -d '{"title":"test space1", "type":"social"}' -b 'connect.sid=s%3AL7
 ```
 {% endmethod %}
 {% method %}
-####`DELETE /spaces/1`
+####`DELETE /spaces/<id>`
 
 delete space
 {% sample lang="bash" %}
