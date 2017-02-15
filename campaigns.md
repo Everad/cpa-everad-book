@@ -48,9 +48,9 @@ space_id - on of /spaces
 postback_url
 postback_type - one of /lists/postback-types
 trafficback_url
-*landing_domain - if local should end with one of /lists/campaign-domains.
+*landing_domain - if local, should end with one of /lists/campaign-domains.
 *landing_domain_type - one of /lists/campaign-domain-types
-transit_domain - if local should end with one of /lists/campaign-domains.
+transit_domain - if local, should end with one of /lists/campaign-domains.
 transit_domain_type - one of /lists/campaign-domain-types
 sid1_utm
 sid2_utm
@@ -67,7 +67,7 @@ is_comebacker_enabled
 
 {% sample lang="bash" %}
 ```bash
-curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external"}' http://dashboard.everad.com/v2/campaigns
+curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external"}' http://dashboard.everad.com/v2/campaigns
 ```
 ######success response
 ```
@@ -77,14 +77,25 @@ curl -X POST -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix
 {% method %}
 ###`PUT /campaigns/<id>`
 Update existing campaign. Input fields are the same as on create
-
-
 {% sample lang="bash" %}
 ```bash
-curl -X PUT -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external"}' http://dashboard.everad.com/v2/campaigns/1
+curl -X PUT -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external"}' http://dashboard.everad.com/v2/campaigns/1
 ```
 ######success response
 ```
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+{% method %}
+###`DELETE /campaigns/<id>`
+Remove campaign
+{% sample lang="bash" %}
+```bash
+curl -X DELETE -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/campaigns/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
+{% endmethod %}
+
