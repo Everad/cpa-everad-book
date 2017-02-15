@@ -5,12 +5,11 @@ Session data is passed over http cookie, returned to you on calling `login` or `
 ####`POST /session/register`
 
 Register your affiliate account and get session cookie at once
-
-`email`
-
-`password`
-
-`language` - one from `/lists/languages`
+```
+email
+password
+language - one from `/lists/languages`
+```
 {% sample lang="bash" %}
 ```bash
 curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com", "password":"1", "language":"ru"}' -v http://dashboard.everad.com/v2/session/register

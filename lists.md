@@ -24,6 +24,9 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ###`GET /lists/currencies`
 {% endmethod %}
 {% method %}
+###`GET /lists/campaign-domains`
+{% endmethod %}
+{% method %}
 ###`GET /lists/domain-types`
 {% endmethod %}
 {% method %}
