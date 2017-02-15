@@ -1,5 +1,5 @@
 #Spaces
-Manage your traffic sources, used in campaigns **TODO specify space types **
+Manage your traffic sources, used in campaigns
 ##Endpoints
 {% method %}
 ####`GET /spaces`
