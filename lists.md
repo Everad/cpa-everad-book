@@ -11,8 +11,6 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ######success response
 ```
 < HTTP/1.1 200 OK
-< Content-Type: application/json; charset=utf-8
-< Content-Length: 21
 ["en","ru","ro","th"]
 ```
 {% endmethod %}
