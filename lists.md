@@ -2,7 +2,7 @@
 endpoints for receiving different lists, used by other parts of API
 ##Endpoints
 {% method %}
-###`/lists/languages`
+###`GET /lists/languages`
 retrieve available response languages
 {% sample lang="bash" %}
 ```bash
