@@ -26,7 +26,6 @@ curl -X POST -d '{"title":"test space", "type":"social"}' -b 'connect.sid=s%3AL7
 ######success response
 ```
 < HTTP/1.1 201 Created
-[{"id":1,"title":"test space", "type":"social", "description":"my test space"}]
 ```
 {% endmethod %}
 {% method %}
@@ -40,7 +39,6 @@ curl -X PUT -d '{"title":"test space1", "type":"social"}' -b 'connect.sid=s%3AL7
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"id":1,"title":"test space1", "type":"social", "description":"my test1 space"}]
 ```
 {% endmethod %}
 {% method %}

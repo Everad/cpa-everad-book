@@ -24,7 +24,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ###`GET /lists/currencies`
 {% endmethod %}
 {% method %}
-###`GET /lists/campaign-domains`
+###`GET /lists/campaign-domains` - available only for active session
 {% endmethod %}
 {% method %}
 ###`GET /lists/domain-types`
