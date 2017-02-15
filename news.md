@@ -12,9 +12,6 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"published_at":"2017-02-14T11:28:43.646Z", "text":""
-title
-:
-"Расширение гео на оффере Valgulex - средство от вальгусной деформации"}]
+[{"published_at":"2017-02-14T11:28:43.646Z", "text":"<div>news test</div>", "title": "news title"}]
 ```
 {% endmethod %}

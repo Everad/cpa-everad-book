@@ -14,3 +14,14 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ["en","ru","ro","th"]
 ```
 {% endmethod %}
+{% method %}
+###`GET /lists/space-types`
+{% endmethod %}
+{% method %}
+###`GET /lists/offer-categories`
+{% endmethod %}
+
+
+
+
+
