@@ -20,6 +20,18 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 {% method %}
 ###`GET /lists/offer-categories`
 {% endmethod %}
+{% method %}
+###`GET /lists/currencies`
+{% endmethod %}
+{% method %}
+###`GET /lists/domain-types`
+{% endmethod %}
+{% method %}
+###`GET /lists/traffic-types`
+{% endmethod %}
+{% method %}
+###`GET /lists/traffic-sources`
+{% endmethod %}
 
 
 
