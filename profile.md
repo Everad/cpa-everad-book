@@ -65,6 +65,8 @@ skype
 phone
 manager
 status - one of /lists/affiliate-statuses
+notificate_news - flag
+notificate_tickets - flag
 }
 ```
 {% endmethod %}
@@ -74,16 +76,35 @@ update your profile general info
 ```
 phone - can always be updated
 skype - can only be updated if previously was empty
+notificate_news - flag
+notificate_tickets - flag
 ```
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111"}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile
+curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111", "notificate_tickets": true}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile
 ```
 ######success response
 ```
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
