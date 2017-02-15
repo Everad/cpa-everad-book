@@ -19,6 +19,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     space_id
     postback_url
     postback_type - one of /lists/postback-types
+    postback_ignore_trash - flag
     trafficback_url
     landing_domain
     landing_domain_type - one of /lists/campaign-domain-types

@@ -14,5 +14,5 @@
 * [Campaigns](campaigns.md)
 * [Profile](profile.md)
 * [Support](support.md)
-* Statistics
+* [Statistics](statistics.md)
 

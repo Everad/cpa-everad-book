@@ -60,7 +60,7 @@ notificate_tickets - flag
 update your profile general info
 ```
 language - one of /lists/languages
-phone - can always be updated
+phone
 skype - can only be updated if previously was empty
 notificate_news - flag
 notificate_tickets - flag
@@ -74,6 +74,14 @@ curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111", "notif
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+{% method %}
+###`/profile/novostnik`
+{% endmethod %}
+{% method %}
+###`/profile/global-postback`
+{% endmethod %}
+
+
 
 
 
