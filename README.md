@@ -8,9 +8,9 @@ All incoming data is passed using **JSON** format \(with specified `Content-type
 
 #### Response usable data:
 
-**HTTP Status Code** indicates whether your request was successfuly processed \(`200`, `201` codes\) or ended with error \(`400` - bad income data, `403` - you have no permission to access requested endpoint, `500` - internal server error, need to contuct support\)
+**HTTP Status Code** indicates whether your request was successfully processed \(`200`, `201` codes\) or ended with error \(`400` - bad input data, `403` - you have no permission to access requested endpoint, `500` - internal server error, need to contact support\)
 
-**Response Body** contains requested or error info \(for `400` status codes\)
+**Response Body** contains requested data or error info \(for `400` status codes\)
 
 #### Base url
 
@@ -20,7 +20,7 @@ All incoming data is passed using **JSON** format \(with specified `Content-type
 
 `/lists` - fetch available data enums, used in other endpoints
   
-`/session` - manage your current session and access permissions to internal methods  
+`/session` - manage your current session and permissions to access internal methods  
 
 `/profile` - manage profile data \(contacts, payments, language info\)  
 
@@ -28,7 +28,7 @@ All incoming data is passed using **JSON** format \(with specified `Content-type
 
 `/offers` - fetch available offers, manage your current offer permissions  
 
-`/spaces` - manage your personal spaces for groupping your incoming traffic  
+`/spaces` - manage your personal spaces for grouping your incoming traffic  
 
 `/campaigns` - manage your campaigns  
 
