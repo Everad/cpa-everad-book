@@ -1,9 +1,9 @@
 #Campaigns
-manage your campaigns ***TODO add split sessions***
+Manage your campaigns. ***TODO add split sessions***
 ##Endpoints
 {% method %}
 ###`GET /campaigns`
-Get your campaigns
+Get your campaigns.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/campaigns
@@ -14,7 +14,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     id
     created_at
     updated_at
-    is_active - flag indicating that campaign can recieve traffic
+    is_active - flag indicating that campaign can receive traffic
     offer_id
     space_id
     postback_url
@@ -42,10 +42,10 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 {% endmethod %}
 {% method %}
 ###`POST /campaigns`
-Create new campaign (required fields marked with `*`). Your profile should have active balance for desired offer payout currency (look at profile section).
+Create a new campaign (required fields are marked with `*`). Your profile should have active balance for desired offer payout currency (look at profile section).
 ```
-*offer_id - one of /offers with `available` flag active
-space_id - on of /spaces
+*offer_id - one of /offers with an `available` flag set to true
+space_id - one of /spaces
 postback_url
 postback_type - one of /lists/postback-types
 trafficback_url
@@ -77,7 +77,7 @@ curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNem
 {% endmethod %}
 {% method %}
 ###`PUT /campaigns/<id>`
-Update existing campaign. Input fields are the same as on create
+Update an existing campaign. Input fields are the same as when creating a new campaign.
 {% sample lang="bash" %}
 ```bash
 curl -X PUT -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external"}' http://dashboard.everad.com/v2/campaigns/1
@@ -89,7 +89,7 @@ curl -X PUT -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemY
 {% endmethod %}
 {% method %}
 ###`DELETE /campaigns/<id>`
-Remove campaign
+Remove a campaign.
 {% sample lang="bash" %}
 ```bash
 curl -X DELETE -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/campaigns/1

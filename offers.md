@@ -1,10 +1,10 @@
 #Offers
-List available offers
+List available offers.
 ##Endpoints
 {% method %}
 ####`GET /offers`
 
-Get available offers. Availability is marked over `available` flag. If it's `true` - you can create campaign with this offer. Otherwise access request required (look at support section).
+Get available offers. Availability is marked with an `available` flag. If it's `true` - you can create campaigns with this offer. Otherwise an access request is required (see support section).
 {% sample lang="bash" %}
 ```bash
 curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers
@@ -44,7 +44,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 {% endmethod %}
 {% method %}
 ####`GET /offers/<id>/news`
-Get offer news
+Get offer news.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers/1/news
