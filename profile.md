@@ -18,6 +18,19 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 ```
 {% endmethod %}
 {% method %}
+###`POST /profile/balances`
+Create new balance for desired currency. Only one currency balance can be created per account.
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -H 'Content-type: application/json' -d '{"currency": "usd"}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile/balances
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
+{% endmethod %}
+
+{% method %}
 ###`PUT /profile/password`
 change your profile password
 {% sample lang="bash" %}
