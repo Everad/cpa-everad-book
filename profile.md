@@ -1,8 +1,8 @@
 #Profile
-Manage your profile information
+Manage your profile information.
 {% method %}
 ###`GET /profile/balances`
-Get account balances
+Get account balances. A balance is a wallet for a single currency.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile/balances
@@ -19,7 +19,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 {% endmethod %}
 {% method %}
 ###`POST /profile/balances`
-Create new balance for desired currency. Only one currency balance can be created per account.
+Create a new balance for desired currency. Only one currency balance can be created per account.
 {% sample lang="bash" %}
 ```bash
 curl -X POST -v -H 'Content-type: application/json' -d '{"currency": "usd"}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile/balances
@@ -32,7 +32,7 @@ curl -X POST -v -H 'Content-type: application/json' -d '{"currency": "usd"}' -b 
 
 {% method %}
 ###`PUT /profile/password`
-change your profile password
+Change your profile password.
 {% sample lang="bash" %}
 ```bash
 curl -X PUT -v -H 'Content-type: application/json' -d '{"old_password": "1", "new_password":"2"}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile/password
@@ -48,7 +48,7 @@ curl -X PUT -v -H 'Content-type: application/json' -d '{"old_password": "1", "ne
 {% endmethod %}
 {% method %}
 ###`GET /profile`
-get your profile general info
+Get general info about your profile.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile
@@ -70,7 +70,7 @@ notificate_tickets - flag
 {% endmethod %}
 {% method %}
 ###`PUT /profile`
-update your profile general info
+Update your profile general info.
 ```
 language - one of /lists/languages
 phone

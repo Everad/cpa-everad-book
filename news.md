@@ -1,10 +1,10 @@
 #News
-Get available news
+Get available news.
 ##Endpoints
 {% method %}
 ####`GET /news`
 
-Get **last** 100 available news (can use offset to get other pages)
+Get **last** 100 available news (use offset to get earlier news).
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v http://dashboard.everad.com/v2/news?offset=100

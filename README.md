@@ -1,16 +1,16 @@
-Everad CPA v2 Dashboard API
+#Everad CPA v2 Dashboard API
 
-This describes **API** for managing your affiliate account inside **Everad CPA** application.
+This describes the **API** for managing your affiliate account inside **Everad CPA** application.
 
-API operates **REST** principles with some deviations described explicitly in method's description.
+API operates on **REST** principles with some deviations described explicitly in method's description.
 
-All incoming data is passed using **JSON** format \(with specified `Content-type: application/json` header\)
+All incoming data is passed in **JSON** format \(with specified `Content-type: application/json` header\)
 
 #### Response usable data:
 
-**HTTP Status Code** indicates whether your request was successfully processed \(`200`, `201` codes\) or ended with error \(`400` - bad input data, `403` - you have no permission to access requested endpoint, `500` - internal server error, need to contact support\)
+**HTTP Status Code** indicates whether your request was successfully processed \(`200`, `201` codes\) or ended with error \(`400` - bad input data, `403` - you don't have a permission to access the requested endpoint, `500` - internal server error, contact support\).
 
-**Response Body** contains requested data or error info \(for `400` status codes\)
+**Response Body** contains requested data or error info \(for `400` status codes\).
 
 #### Base url
 
@@ -18,21 +18,22 @@ All incoming data is passed using **JSON** format \(with specified `Content-type
 
 #### Methods available:
 
-`/lists` - fetch available data enums, used in other endpoints
+`/lists` - fetch available data enums, used in other endpoints.
   
-`/session` - manage your current session and permissions to access internal methods  
+`/session` - manage your current session and permissions to access internal methods.  
 
-`/profile` - manage profile data \(contacts, payments, language info\)  
+`/profile` - manage profile data \(contacts, payments, language info\).  
 
-`/news` - fetch current news  
+`/news` - fetch current news.  
 
-`/offers` - fetch available offers, manage your current offer permissions  
+`/offers` - fetch available offers, manage your current offer permissions.  
 
-`/spaces` - manage your personal spaces for grouping your incoming traffic  
+`/spaces` - manage your personal spaces for grouping your incoming traffic.  
 
-`/campaigns` - manage your campaigns  
+`/campaigns` - manage your campaigns.  
 
-`/support` - manage your support requests
+`/support` - manage your support requests.
+
 
 
 

@@ -1,9 +1,9 @@
 #Lists
-endpoints for receiving different lists, used by other parts of API
+Endpoints for receiving different lists, used by other parts of API.
 ##Endpoints
 {% method %}
 ###`GET /lists/languages`
-retrieve available response languages
+Retrieve available response languages.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v http://dashboard.everad.com/v2/lists/languages
