@@ -13,7 +13,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ######success response
 ```
 < HTTP/1.1 200 OK
-["en","ru"]
+[{"id":"en","text":"English"},{"id":"ru","text":"Russian"}]
 ```
 {% endmethod %}
 {% method %}
