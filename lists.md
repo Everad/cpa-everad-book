@@ -1,5 +1,7 @@
 #Lists
-Endpoints for receiving different lists, used by other parts of API.
+Endpoints for receiving different lists, used by other parts of API. 
+
+Use `?lang=ru` or `?lang=en` query parameters in the URL to explicitly request localized versions of lists. English is set by default unless your browser language or your user profile language are supported by the API.
 ##Endpoints
 {% method %}
 ###`GET /lists/languages`
@@ -11,33 +13,67 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/languages
 ######success response
 ```
 < HTTP/1.1 200 OK
-["en","ru","ro","th"]
+["en","ru"]
 ```
 {% endmethod %}
 {% method %}
 ###`GET /lists/space-types`
+Retrieve possible space types.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/space-types
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"site","text":"site"},{"id":"context","text":"context"},{"id":"social","text":"social"},{"id":"doorway","text":"doorway"},{"id":"email","text":"email"},{"id":"arbitrage","text":"arbitrage"}]
+```
 {% endmethod %}
 {% method %}
 ###`GET /lists/offer-categories`
+Retrieve possible offer categories.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/offer-categories
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"slimming","text":"slimming"},{"id":"cosmetics","text":"cosmetics"},{"id":"adult","text":"adult"},{"id":"medical","text":"medical"},{"id":"auto","text":"auto"},{"id":"other","text":"other"}]
+```
 {% endmethod %}
 {% method %}
 ###`GET /lists/currencies`
+Retrieve available currencies.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/currencies
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"usd","text":"usd"},{"id":"rub","text":"rub"},{"id":"byn","text":"byn"},{"id":"kgs","text":"kgs"},{"id":"kzt","text":"kzt"},{"id":"mdl","text":"mdl"},{"id":"azn","text":"azn"},{"id":"gel","text":"gel"},{"id":"uah","text":"uah"},{"id":"ron","text":"ron"},{"id":"thb","text":"thb"},{"id":"amd","text":"amd"}]
+```
 {% endmethod %}
 {% method %}
 ###`GET /lists/campaign-domains` - available only for active session
 {% endmethod %}
 {% method %}
-###`GET /lists/domain-types`
+###`GET /lists/offer-domain-types`
+Retrieve possible offer domain types.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/offer-domain-types
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"landing","text":"landing"},{"id":"transit","text":"transit"}]
+```
+
 {% endmethod %}
-{% method %}
-###`GET /lists/traffic-types`
-{% endmethod %}
-{% method %}
-###`GET /lists/traffic-sources`
-{% endmethod %}
-{% method %}
-###`GET /lists/affiliate-statuses`
-{% endmethod %}
+
+
 
 
 
