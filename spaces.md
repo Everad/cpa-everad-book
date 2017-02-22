@@ -16,6 +16,12 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 ```
 {% endmethod %}
 {% method %}
+####`GET /spaces/<id>`
+Get space data
+######success response - same as array item from `/spaces` request.
+{% endmethod %}
+
+{% method %}
 ####`POST /spaces`
 
 Create a new space.
