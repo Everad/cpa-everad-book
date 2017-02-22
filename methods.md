@@ -9,6 +9,7 @@ Register your affiliate account and get session cookie at once.
 email
 password
 language - one from `/lists/languages`
+timezone - one from `/lists/timezones`
 ```
 {% sample lang="bash" %}
 ```bash
