@@ -4,7 +4,7 @@
 Return up to 5 results based on query. Only offers, available for campaign creation, can be returned.
 **Params:**
 
-`title` - title part (min 1 symbol)
+`query` - title part (min 1 symbol)
 
 `lang` - optional parameter. Profile language used by default
 
