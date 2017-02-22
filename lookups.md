@@ -4,9 +4,9 @@
 Return up to 5 results based on query. Only offers, available for campaign creation, can be returned.
 **Params:**
 
-`query` - title part (min 1 symbol)
+`query` - title part (optional)
 
-`lang` - optional parameter. Profile language used by default
+`lang` - query lang (optional, profile language used by default)
 
 {% sample lang="bash" %}
 ```bash
