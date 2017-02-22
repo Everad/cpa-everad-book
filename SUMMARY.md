@@ -15,4 +15,5 @@
 * [Profile](profile.md)
 * [Support](support.md)
 * [Statistics](statistics.md)
+* [Lookups](lookups.md)
 

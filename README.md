@@ -1,4 +1,4 @@
-#Everad CPA v2 Dashboard API
+# Everad CPA v2 Dashboard API
 
 This describes the **API** for managing your affiliate account inside **Everad CPA** application.
 
@@ -19,22 +19,22 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 #### Methods available:
 
 `/lists` - fetch available data enums, used in other endpoints.
-  
-`/session` - manage your current session and permissions to access internal methods.  
 
-`/profile` - manage profile data \(contacts, payments, language info\).  
+`/session` - manage your current session and permissions to access internal methods.
 
-`/news` - fetch current news.  
+`/profile` - manage profile data \(contacts, payments, language info\).
 
-`/offers` - fetch available offers, manage your current offer permissions.  
+`/news` - fetch current news.
 
-`/spaces` - manage your personal spaces for grouping your incoming traffic.  
+`/offers` - fetch available offers, manage your current offer permissions.
 
-`/campaigns` - manage your campaigns.  
+`/spaces` - manage your personal spaces for grouping your incoming traffic.
+
+`/campaigns` - manage your campaigns.
 
 `/support` - manage your support requests.
 
+`/statistics` - get your traffic and financial statistics
 
-
-
+`/lookups` - lookup for data by partial name
 
