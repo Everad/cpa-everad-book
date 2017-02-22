@@ -70,8 +70,30 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/offer-domain-types
 < HTTP/1.1 200 OK
 [{"id":"landing","text":"landing"},{"id":"transit","text":"transit"}]
 ```
-
 {% endmethod %}
+{% method %}
+###`GET /lists/timezones`
+Retrieve possible system timezones.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/timezones
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"Europe/Moscow","text":"Europe/Moscow"},{"id":"Europe/Minsk","text":"Europe/Minsk"}]
+```
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
 
 
 

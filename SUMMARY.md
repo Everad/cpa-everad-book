@@ -6,9 +6,9 @@
 
 ## Methods
 
-* [Lists](lists.md)
-* [Session](methods.md)
-* [Spaces](spaces.md)
+* [Lists \(+\)](lists.md)
+* [Session \(+\)](methods.md)
+* [Spaces \(+\)](spaces.md)
 * [News](news.md)
 * [Offers](offers.md)
 * [Campaigns](campaigns.md)
