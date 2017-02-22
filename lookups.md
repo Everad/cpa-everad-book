@@ -2,6 +2,7 @@
 {% method %}
 ####`GET /lookups/offers`
 Return up to 5 results based on query. Only offers, available for campaign creation, can be returned.
+
 **Params:**
 
 `query` - title part (optional)
