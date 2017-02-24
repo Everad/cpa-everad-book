@@ -44,3 +44,36 @@ curl -v -X POST -H 'Content-type: application/json' -d'{"currency":"rub", "date_
 [{"hosts":"6","hits":"6","transitions":"0","accepted_conversions":"0","pending_conversions":"2","declined_conversions":"0","total_conversions":"2","invalid_conversions":"0","accepted_income":"0","pending_income":"200.00","declined_income":"0","offer":"beer"}]
 ```
 {% endmethod %}
+{% method %}
+###`POST /analytics/lists/<field>`
+Get avaialable *field* values (up to 5) for filtering analytics requests
+
+**Query parameters:**
+
+`lang` - desired response language (session language by default)
+
+**Body parameters:**
+
+```
+date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
+    start
+    end
+}
+currency -- one of user balances currency
+query -- user lookup query
+```
+
+{% sample lang="bash" %}
+```bash
+curl -v -X POST -H 'Content-type: application/json' -d'{"query":"ро", "currency":"rub","date_range": {"start": "2017-01-01", "end": "2017-02-24 23:59:59.99999"}}' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' http://localhost:4001/v2/analytics/lists/countries
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":2017370,"text":"Россия"}]
+```
+{% endmethod %}
+
+
+
+
