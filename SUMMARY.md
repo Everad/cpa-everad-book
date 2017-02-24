@@ -6,7 +6,7 @@
 
 ## Methods
 
-* [Lists \(+\)](lists.md)
+* [Lists \(+-\)](lists.md)
 * [Session \(+\)](methods.md)
 * [Spaces \(+\)](spaces.md)
 * [News](news.md)
@@ -14,6 +14,6 @@
 * [Campaigns](campaigns.md)
 * [Profile](profile.md)
 * [Support](support.md)
-* [Statistics](statistics.md)
+* [Analytics](statistics.md)
 * [Lookups](lookups.md)
 

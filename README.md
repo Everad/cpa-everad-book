@@ -34,7 +34,7 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 
 `/support` - manage your support requests.
 
-`/statistics` - get your traffic and financial statistics
+`/analytics` - get your traffic and financial statistics
 
 `/lookups` - lookup for data by partial name
 

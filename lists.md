@@ -84,6 +84,53 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/timezones
 [{"id":"Europe/Moscow","text":"Europe/Moscow"},{"id":"Europe/Minsk","text":"Europe/Minsk"}]
 ```
 {% endmethod %}
+{% method %}
+###`GET /lists/traffic-types`
+Retrieve possible system traffic types.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/traffic-types?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"desktop","text":"компьютер"},{"id":"tablet","text":"планшет"},{"id":"phone","text":"смартфон"},{"id":"bot","text":"бот"},{"id":"tv","text":"телевизор"}]
+```
+{% endmethod %}
+{% method %}
+###`GET /lists/campaign-types`
+Retrieve possible system campaign types.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-types?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"general","text":"общий"},{"id":"novostnik","text":"с новостника"},{"id":"parked_novostnik","text":"с паркованного новостника"}]
+```
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
