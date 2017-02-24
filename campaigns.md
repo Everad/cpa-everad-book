@@ -17,6 +17,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     is_active - flag indicating that campaign can receive traffic
     offer_id
     space_id
+    currency - one of /lists/currencies
     postback_url
     postback_type - one of /lists/postback-types
     postback_ignore_trash - flag
