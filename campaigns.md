@@ -43,7 +43,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 {% endmethod %}
 {% method %}
 ###`POST /campaigns`
-Create a new campaign (required fields are marked with `*`). Your profile should have active balance for desired offer payout currency (look at profile section).
+Create a new campaign (required fields are marked with `*`).
 ```
 *offer_id - one of /offers with an `available` flag set to true
 space_id - one of /spaces
