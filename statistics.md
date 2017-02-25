@@ -12,8 +12,8 @@ Get date ranged general statistics
 
 ```
 date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
-    start
-    end
+    start (YYYY-MM-DD HH:mm:ss.SSS)
+    end (YYYY-MM-DD HH:mm:ss.SSS)
 }
 currency -- one of user balances currency
 groups: ['date', 'hour', 'offer', 'landing', 'transit', 'country', 'city', 'campaign', 'campaign_type', 'traffic_type', 'sid1', 'sid2', 'sid3', 'sid4', 'sid5'] -- several values available
