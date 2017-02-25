@@ -36,7 +36,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     is_novostnik_after_submit_enabled
     is_comebacker_enabled,
     domains: [{
-        id -  one of /offers/<id> .domains
+        id -  one of /offers/<id> domains.id
     }]
 }]
 ```
