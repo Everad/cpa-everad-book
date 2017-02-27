@@ -63,7 +63,7 @@ is_novostnik_on_transit_enabled
 is_novostnik_after_submit_enabled
 is_comebacker_enabled
 *domains: [{
-    *id - one of /offers .<id>.domains.id   
+    *id - one of /offers/<id> domains.id   
 }]
 ```
 
