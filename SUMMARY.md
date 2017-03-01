@@ -15,5 +15,5 @@
 * [Profile](profile.md)
 * [Support](support.md)
 * [Analytics \(+\)](statistics.md)
-* [Lookups](lookups.md)
+* [Lookups \(+\)](lookups.md)
 
