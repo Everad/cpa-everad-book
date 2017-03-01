@@ -121,6 +121,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-types?lang=ru
 ```
 {% endmethod %}
 
+{% method %}\
 ###`GET /lists/news-types`
 Retrieve possible news types.
 {% sample lang="bash" %}
