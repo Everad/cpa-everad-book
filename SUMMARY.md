@@ -9,7 +9,7 @@
 * [Lists \(+\)](lists.md)
 * [Session \(+\)](methods.md)
 * [Spaces \(+\)](spaces.md)
-* [News](news.md)
+* [News \(+\)](news.md)
 * [Offers \(+\)](offers.md)
 * [Campaigns \(+\)](campaigns.md)
 * [Profile](profile.md)
