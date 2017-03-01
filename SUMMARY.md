@@ -11,7 +11,7 @@
 * [Spaces \(+\)](spaces.md)
 * [News](news.md)
 * [Offers \(+ without news\)](offers.md)
-* [Campaigns](campaigns.md)
+* [Campaigns \(+\)](campaigns.md)
 * [Profile](profile.md)
 * [Support](support.md)
 * [Analytics \(+\)](statistics.md)

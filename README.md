@@ -4,7 +4,7 @@ This describes the **API** for managing your affiliate account inside **Everad C
 
 API operates on **REST** principles with some deviations described explicitly in method's description.
 
-All incoming data is passed in **JSON** format \(with specified `Content-type: application/json` header\)
+All incoming data is passed in **JSON** format \(with specified `Content-type: application/json` header)\
 
 #### Response usable data:
 

@@ -88,6 +88,19 @@ curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111", "notif
 ```
 {% endmethod %}
 {% method %}
+###`GET /profile/payout-systems`
+Get available payout systems for your profile balance currencies
+{% sample lang="bash" %}
+```bash
+curl -v -X GET -b 'connect.sid=s%3A8D9teXFlvopv65U1YFayTgBT5iq9WS3R.rhDzTzI4blRSzPwGe6P0PNiZa0otDLMvF4rwsEK4QuU' http://dashboard.everad.com/v2/profile/payout-systems
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":1,"title":"рубли наличными","currency":"rub","fields":{"account":{"type":"string"}},"credentials":null}]
+```
+{% endmethod %}
+{% method %}
 ###`/profile/novostnik`
 {% endmethod %}
 {% method %}
