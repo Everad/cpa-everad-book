@@ -10,7 +10,7 @@
 * [Session \(+\)](methods.md)
 * [Spaces \(+\)](spaces.md)
 * [News](news.md)
-* [Offers \(+ without news\)](offers.md)
+* [Offers \(+\)](offers.md)
 * [Campaigns \(+\)](campaigns.md)
 * [Profile](profile.md)
 * [Support](support.md)
