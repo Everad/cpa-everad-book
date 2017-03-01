@@ -120,7 +120,6 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-types?lang=ru
 [{"id":"general","text":"общий"},{"id":"novostnik","text":"с новостника"},{"id":"parked_novostnik","text":"с паркованного новостника"}]
 ```
 {% endmethod %}
-
 {% method %}\
 ###`GET /lists/news-types`
 Retrieve possible news types.
