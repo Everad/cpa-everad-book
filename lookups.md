@@ -22,6 +22,5 @@ curl -X GET -b 'connect.sid=s%3AKYaiGDA6QNmBM_S4xtY7vZJzYV_D8-8c.Yjmbs%2Fjz3ofZc
 < HTTP/1.1 200 OK
 [{"id":"1","text":"intoxic"},{"id":"2","text":"intoxic+"}]
 ```
-
 {% endmethod %}
 

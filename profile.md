@@ -101,6 +101,19 @@ curl -v -X GET -b 'connect.sid=s%3A8D9teXFlvopv65U1YFayTgBT5iq9WS3R.rhDzTzI4blRS
 ```
 {% endmethod %}
 {% method %}
+###`PUT /profile/payout-systems/<id>`
+Update payout system's credentials (based on fields from `/profile/payout-systems` request)
+{% sample lang="bash" %}
+```bash
+curl -v -X PUT -H 'Content-type: application/json' -d '{"account": "кошель"}' -b 'connect.sid=s%3A8D9teXFlvopv65U1YFayTgBT5iq9WS3R.rhDzTzI4blRSzPwGe6P0PNiZa0otDLMvF4rwsEK4QuU' http://dashboard.everad.com/v2/profile/payout-systems/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
+{% endmethod %}
+
+{% method %}
 ###`/profile/novostnik`
 {% endmethod %}
 {% method %}
