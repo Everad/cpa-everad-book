@@ -1,7 +1,7 @@
 #Analytics
 Get your traffic and conversions statistics
 {% method %}
-###`POST /analytics/general`
+###`GET /analytics/general`
 Get date ranged general statistics
 
 **Query parameters:**
@@ -45,7 +45,7 @@ curl -v -X POST -H 'Content-type: application/json' -d'{"currency":"rub", "date_
 ```
 {% endmethod %}
 {% method %}
-###`POST /analytics/lists/<field>`
+###`GET /analytics/lists/<field>`
 Get avaialable *field* values (up to 5) for filtering analytics requests
 
 **Query parameters:**

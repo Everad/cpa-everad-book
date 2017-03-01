@@ -9,15 +9,7 @@ Use `type` param to select news by category and `search` param to search relevan
 
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc'  'http://dashboard.everad.com/v2/news?offset=100&type=new_offer&search="test"'
-```
-
-{% sample lang="bash" %}
-```bash
-
-// with dates:
-
-curl -X GET -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'http://dashboard.everad.com/v2/news' -G --data-urlencode 'date_range={"start": "2016-01-01", "end": "2016-01-01"}'
+curl -X GET -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'http://dashboard.everad.com/v2/news' -H 'content-type: application/json' -d '{"types": ["new_offer", "offer_stop", "new_landing"], "offset": 100, "search": "your input"}' | jq .
 ```
 ######success response
 ```
