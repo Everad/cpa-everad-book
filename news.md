@@ -5,7 +5,7 @@ Get available news.
 ####`GET /news`
 
 Get **last** 100 available news (use offset to get earlier news).
-Use `type` param to select news by category and `search` param to search relevant news. Use `date_range` param to select news between needed dates.
+Use `type` param - one of `lists/news-types` - to select news by category and `search` param to search relevant news. Use `date_range` param to select news between needed dates.
 
 {% sample lang="bash" %}
 ```bash

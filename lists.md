@@ -121,6 +121,60 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-types?lang=ru
 ```
 {% endmethod %}
 
+###`GET /lists/news-types`
+Retrieve possible news types.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/news-types?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"new_offer","text":"новинки"},{"id":"offer_stop","text":"приостановка офферов"},{"id":"offer_change","text":"изменение офферов"},{"id":"geo_change","text":"расширение гео"},{"id":"new_landing","text":"новые лэндинги"},{"id":"custom","text":"системные тикеты"}]
+```
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
