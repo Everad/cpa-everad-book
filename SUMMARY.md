@@ -13,7 +13,7 @@
 * [Offers \(+\)](offers.md)
 * [Campaigns \(+\)](campaigns.md)
 * [Profile](profile.md)
-* [Finances](finances.md)
+* [Finances \(+\)](finances.md)
 * [Support](support.md)
 * [Analytics \(+\)](statistics.md)
 * [Lookups \(+\)](lookups.md)
