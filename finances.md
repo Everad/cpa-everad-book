@@ -1,5 +1,5 @@
 #Finances
-Manage your finances information, payouts
+Manage your finance information, payouts
 {% method %}
 ###`GET /finances/payouts`
 Get pending payouts
