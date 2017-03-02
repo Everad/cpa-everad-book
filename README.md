@@ -24,6 +24,8 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 
 `/profile` - manage profile data \(contacts, payments, language info\).
 
+`/finances` - manage your finances (daily transactions, payouts).
+
 `/news` - fetch current news.
 
 `/offers` - fetch available offers, manage your current offer permissions.
