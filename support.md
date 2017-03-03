@@ -89,3 +89,15 @@ curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3A9RnpiJ4u
 < HTTP/1.1 201 Created
 ```
 {% endmethod %}
+{% method %}
+###`POST /threads/:id`
+Create a post in a thread.
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -b 'connect.sid=s%3AVvfflLue_6MkfHEN5S9N2tN9-z50Zdxf.ASQBDXkdlsoRIklt6ltLiEGGdr%2BtawqRF%2BhLX51apbg' 'http://dashboard.everad.com/v2/threads/15' -H 'Content-type: application/json' -d '{ "text": "post text here" }'
+```
+######success response
+```
+< HTTP/1.1 201 Created
+```
+{% endmethod %}
