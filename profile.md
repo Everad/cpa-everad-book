@@ -67,6 +67,7 @@ email
 skype
 phone
 manager
+is_master - flag indicating master mode (see `Master account` section)
 status - one of /lists/affiliate-statuses
 notificate_news - flag
 notificate_tickets - flag
