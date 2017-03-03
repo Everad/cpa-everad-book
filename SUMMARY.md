@@ -17,4 +17,5 @@
 * [Support](support.md)
 * [Analytics \(+\)](statistics.md)
 * [Lookups \(+\)](lookups.md)
+* [Master account](master-account.md)
 

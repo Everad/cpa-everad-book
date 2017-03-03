@@ -108,6 +108,19 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/traffic-types?lang=ru
 ```
 {% endmethod %}
 {% method %}
+###`GET /lists/traffic-sources`
+Retrieve possible system traffic sources.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/traffic-sources?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"general","text":"общий / не определен"},{"id":"social","text":"социальный"},{"id":"teasers","text":"тизерный"}]
+```
+{% endmethod %}
+{% method %}
 ###`GET /lists/campaign-types`
 Retrieve possible system campaign types.
 {% sample lang="bash" %}

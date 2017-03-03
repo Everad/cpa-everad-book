@@ -40,3 +40,5 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 
 `/lookups` - lookup for data by partial name
 
+`/master-account` - manage your children account preferences (if your account is in `master` mode)
+
