@@ -77,3 +77,15 @@ curl -X GET -v -b 'connect.sid=s%3A09OpKmlx3UY73RKvuKH1-KpaorJNxuwN.GMThTayHUQ0k
 ]
 ```
 {% endmethod %}
+{% method %}
+###`POST /threads`
+Create a thread.
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3A9RnpiJ4u9OE2WWFHGLG49jP01sTScNFq.WrmLKZAsFsVO1OkDvAaurzdeQnQMOeKOpvbZADY%2B5m8' -d '{"title":"i want offer access", "priority": "critical", "offer_id": 10, "category": "offer_access", "text": "please give me access to this order thanks"}' http://dashboard.everad.com/v2/threads
+```
+######success response
+```
+< HTTP/1.1 201 Created
+```
+{% endmethod %}
