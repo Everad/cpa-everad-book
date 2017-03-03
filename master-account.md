@@ -18,6 +18,8 @@ location_id
 traffic_type - one from `/lists/traffic-types` or `null`
 traffic_source - one from `/lists/traffic-sources` or `null`
 amount - from `0.01` to your account current payout amount
+
+N.B. only values from your personal payout settings can be passed.
 ```
 
 {% sample lang="bash" %}
