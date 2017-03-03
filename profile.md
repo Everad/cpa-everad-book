@@ -47,6 +47,11 @@ curl -X PUT -v -H 'Content-type: application/json' -d '{"old_password": "1", "ne
 ```
 {% endmethod %}
 {% method %}
+###`GET /profile/manager`
+Get your manager contact info.
+{% endmethod %}
+
+{% method %}
 ###`GET /profile`
 Get general info about your profile.
 {% sample lang="bash" %}
