@@ -30,7 +30,8 @@ filters: {
     sids2: [sid2] -- one of /analytics/lists/sids2, 
     sids3: [sid3] -- one of /analytics/lists/sids3, 
     sids4: [sid4] -- one of /analytics/lists/sids4, 
-    sids5: [sid5] -- one of /analytics/lists/sids5
+    sids5: [sid5] -- one of /analytics/lists/sids5,
+    affiliates: [ids] -- one of `/master-account/` . available only for master accounts. by default all stats from master and children account is shown
 }
 ```
 
