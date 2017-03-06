@@ -14,7 +14,7 @@
 * [Campaigns \(+\)](campaigns.md)
 * [Profile](profile.md)
 * [Finances \(+\)](finances.md)
-* [Support](support.md)
+* [Support \(+\)](support.md)
 * [Analytics \(+\)](statistics.md)
 * [Lookups \(+\)](lookups.md)
 * [Master account \(+\)](master-account.md)
