@@ -50,11 +50,28 @@ Get offer data
 ######success response - same as array item from `/offers` request.
 {% endmethod %}
 {% method %}
+####`GET /offers/<id>/request`
+Request offer access. If access is granted, returns `200`, if not - returns `403`. 
+{% sample lang="bash" %}
+```bash
+curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers/1/news
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
+######error response
+```
+< HTTP/1.1 403 Forbidden
+```
+
+{% endmethod %}
+{% method %}
 ####`GET /offers/<id>/news`
 Get offer news.
 {% sample lang="bash" %}
 ```bash
-curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers/1/news
+curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers/1/request
 ```
 ######success response - same as general news
 
