@@ -26,7 +26,7 @@ curl -X POST -v -H 'Content-type: application/json' -d '{"currency": "usd"}' -b 
 ```
 ######success response
 ```
-< HTTP/1.1 200 OK
+< HTTP/1.1 201 OK
 ```
 {% endmethod %}
 
@@ -69,8 +69,6 @@ phone
 manager
 is_master - flag indicating master mode (see `Master account` section)
 status - one of /lists/affiliate-statuses
-notificate_news - flag
-notificate_tickets - flag
 }
 ```
 {% endmethod %}
@@ -81,12 +79,10 @@ Update your profile general info.
 language - one of /lists/languages
 phone
 skype - can only be updated if previously was empty
-notificate_news - flag
-notificate_tickets - flag
 ```
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111", "notificate_tickets": true}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile
+curl -X GET -v -H 'Content-type: application/json' -d '{"phone": "11111"}' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/profile
 ```
 ######success response
 ```
@@ -125,6 +121,20 @@ curl -v -X PUT -H 'Content-type: application/json' -d '{"account": "кошель
 {% method %}
 ###`/profile/global-postback`
 {% endmethod %}
+{% method %}
+###`PUT /profile/notifications`
+Update profile notification settings.
+{% sample lang="bash" %}
+```bash
+curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "offer_change": null, "new_offer": "sms", "new_ticket": "email" }' -v http://dashboard.everad.com/v2/profile/notifications
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
+{% endmethod %}
+
+
 
 
 
