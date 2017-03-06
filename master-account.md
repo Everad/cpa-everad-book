@@ -16,8 +16,18 @@ curl -v -X GET -b 'connect.sid=s%3AjqL-ubOG0LAvIsQf2cfHT9EnMvgkLtZH.B4LmgxlrTpnm
 {% endmethod %}
 
 {% method %}
-####`GET /master-account/child-offer-payouts/<child_affiliate_id>`
-Get list of all child account offers and payouts
+####`GET /master-account/child-offer-payouts/<child_affiliate_id>/<offer_id>`
+Get list of child account offer payouts
+{% sample lang="bash" %}
+```bash
+curl -v -X GET -b 'connect.sid=s%3AjqL-ubOG0LAvIsQf2cfHT9EnMvgkLtZH.B4LmgxlrTpnmmHD6VXxVdTbwIkWuZOQ2ZtK1%2FQnMKys' http://dashboard.everad.com/v2/master-account/child-offer-payouts/88/1
+```
+######success response (same as `/offers/<id>` .payouts for your account)
+```
+< HTTP/1.1 200 OK
+[{"traffic_type":null,"traffic_source":null,"amount":100,"location":"Россия","location_id":2017370}]
+```
+
 {% endmethod %}
 {% method %}
 ####`PUT /master-account/child-offer-payouts/<child_affiliate_id>/<offer_id>`
