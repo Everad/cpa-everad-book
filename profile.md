@@ -133,6 +133,59 @@ curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+{% method %}
+###`GET /profile/notifications`
+Retrieve profile notification settings.
+{% sample lang="bash" %}
+```bash
+curl -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/notifications
+```
+######success response
+```
+< HTTP/1.1 200 OK
+{"offer_change":["sms","email"],"new_offer":["email"],"new_ticket":["email"],"promo":["email"],"digest":null}
+```
+{% endmethod %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
