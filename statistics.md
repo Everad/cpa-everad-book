@@ -37,7 +37,7 @@ filters: {
 
 {% sample lang="bash" %}
 ```bash
-curl -v -X POST -H 'Content-type: application/json' -d'{"currency":"rub", "date_range": {"start": "2017-01-01", "end": "2017-02-23 23:59:59.99999"},"groups": ["offer"], "filters": {"landings": [5]}}' -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/general?lang=ru
+curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_range": {"start": "2017-01-01", "end": "2017-02-23 23:59:59.99999"},"groups": ["offer"], "filters": {"landings": [5]}}' -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/general?lang=ru
 ```
 ######success response
 ```
@@ -66,7 +66,7 @@ query -- user lookup query
 
 {% sample lang="bash" %}
 ```bash
-curl -v -X POST -H 'Content-type: application/json' -d'{"query":"ро", "currency":"rub","date_range": {"start": "2017-01-01", "end": "2017-02-24 23:59:59.99999"}}' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' http://localhost:4001/v2/analytics/lists/countries
+curl -v -X GET -H 'Content-type: application/json' -d'{"query":"ро", "currency":"rub","date_range": {"start": "2017-01-01", "end": "2017-02-24 23:59:59.99999"}}' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' http://localhost:4001/v2/analytics/lists/countries
 ```
 ######success response
 ```
