@@ -4,6 +4,15 @@ Manage your child accounts (when in master mode)
 {% method %}
 ####`GET /master-account`
 Get list of all child affiliate accounts.
+{% sample lang="bash" %}
+```bash
+curl -v -X GET -b 'connect.sid=s%3AjqL-ubOG0LAvIsQf2cfHT9EnMvgkLtZH.B4LmgxlrTpnmmHD6VXxVdTbwIkWuZOQ2ZtK1%2FQnMKys' http://dashboard.everad.com/v2/master-account
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":88,"email":"child1@example.com"}]
+```
 {% endmethod %}
 
 {% method %}
