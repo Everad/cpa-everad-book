@@ -126,7 +126,7 @@ curl -v -X PUT -H 'Content-type: application/json' -d '{"account": "кошель
 Update profile notification settings.
 {% sample lang="bash" %}
 ```bash
-curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "offer_change": null, "new_offer": "sms", "new_ticket": "email" }' -v http://dashboard.everad.com/v2/profile/notifications
+curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "offer_change": [], "new_offer": ["sms"], "new_ticket": ["email", "sms"] }' -v http://dashboard.everad.com/v2/profile/notifications
 ```
 ######success response
 ```
