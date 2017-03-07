@@ -137,9 +137,34 @@ curl -v -X PUT -H 'Content-type: application/json' -d '{"account": "кошель
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
-
 {% method %}
-###`/profile/novostnik`
+###`GET /profile/novostnik`
+{% sample lang="bash" %}
+```bash
+curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/novostnik
+```
+######success response
+```
+< HTTP/1.1 200 OK
+{
+  "novostnik_domain": "test.com",
+  "novostnik_domain_type": "external",
+  "novostnik_postback_url": "test.postback.com",
+  "novostnik_postback_type": "approve"
+}
+```
+{% endmethod %}
+{% method %}
+###`PUT /profile/novostnik`
+Update profile personal news page (novostnik) settings.
+{% sample lang="bash" %}
+```bash
+curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "novostnik_domain": "test.com", "novostnik_domain_type": "external", "novostnik_postback_url": "test.postback.com", "novostnik_postback_type": "approve" }' -v http://dashboard.everad.com/v2/profile/novostnik
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
 {% endmethod %}
 {% method %}
 ###`/profile/global-postback`
@@ -161,7 +186,7 @@ curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4
 Retrieve profile notification settings.
 {% sample lang="bash" %}
 ```bash
-curl -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/notifications
+curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/notifications
 ```
 ######success response
 ```
