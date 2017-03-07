@@ -123,7 +123,8 @@ curl -v -X GET -b 'connect.sid=s%3A8D9teXFlvopv65U1YFayTgBT5iq9WS3R.rhDzTzI4blRS
     },
     "credentials":null
   }
-]```
+]
+```
 {% endmethod %}
 {% method %}
 ###`PUT /profile/payout-systems/<id>`
@@ -159,7 +160,7 @@ curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNO
 Update profile personal news page (novostnik) settings.
 {% sample lang="bash" %}
 ```bash
-curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "novostnik_domain": "test.com", "novostnik_domain_type": "external", "novostnik_postback_url": "test.postback.com", "novostnik_postback_type": "approve" }' -v http://dashboard.everad.com/v2/profile/novostnik
+curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "novostnik_domain": "test.com", "novostnik_domain_type": "external", "novostnik_postback_url": "test.postback.com", "novostnik_postback_type": "approve", "novostnik_postback_ignore_trash": true}' -v http://dashboard.everad.com/v2/profile/novostnik
 ```
 ######success response
 ```
@@ -167,7 +168,33 @@ curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4
 ```
 {% endmethod %}
 {% method %}
-###`/profile/global-postback`
+###`GET /profile/global-postback`
+Retrieve profile global postback settings.
+{% sample lang="bash" %}
+```bash
+curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/global-postback
+```
+######success response
+```
+< HTTP/1.1 200 OK
+{
+  "global_postback_url": "test.com",
+  "global_postback_type": "approve",
+  "global_postback_ignore_trash": true
+}
+```
+{% endmethod %}
+{% method %}
+###`PUT /profile/global-postback`
+Update profile global postback settings.
+{% sample lang="bash" %}
+```bash
+curl -X PUT -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -d '{ "global_postback_url": "test.com", "global_postback_type": "approve", "global_postback_ignore_trash": true }' -v http://dashboard.everad.com/v2/profile/global-postback
+```
+######success response
+```
+< HTTP/1.1 200 OK
+```
 {% endmethod %}
 {% method %}
 ###`PUT /profile/notifications`
