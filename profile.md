@@ -10,11 +10,13 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{
-    currency
-    balance
-    hold
-}]
+[
+  {
+    "currency": "rub",
+    "amount": "0.00",
+    "hold_amount": "0.00"
+  }
+]
 ```
 {% endmethod %}
 {% method %}
@@ -49,8 +51,18 @@ curl -X PUT -v -H 'Content-type: application/json' -d '{"old_password": "1", "ne
 {% method %}
 ###`GET /profile/manager`
 Get your manager contact info.
+{% sample lang="bash" %}
+```bash
+curl -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/manager
+```
+######success response
+```
+< HTTP/1.1 200 OK
+{
+  "manager":"Gregory.Powlowski@hotmail.com"
+}
+```
 {% endmethod %}
-
 {% method %}
 ###`GET /profile`
 Get general info about your profile.
@@ -62,13 +74,13 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 ```
 < HTTP/1.1 200 OK
 {
-language
-email
-skype
-phone
-manager
-is_master - flag indicating master mode (see `Master account` section)
-status - one of /lists/affiliate-statuses
+    language
+    email
+    skype
+    phone
+    manager
+    is_master - flag indicating master mode (see `Master account` section)
+    status - one of /lists/affiliate-statuses
 }
 ```
 {% endmethod %}
@@ -99,8 +111,19 @@ curl -v -X GET -b 'connect.sid=s%3A8D9teXFlvopv65U1YFayTgBT5iq9WS3R.rhDzTzI4blRS
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"id":1,"title":"рубли наличными","currency":"rub","fields":{"account":{"type":"string"}},"credentials":null}]
-```
+[
+  {
+    "id":1,
+    "title":"рубли наличными",
+    "currency":"rub",
+    "fields":{
+      "account":{
+        "type":"string"
+      }
+    },
+    "credentials":null
+  }
+]```
 {% endmethod %}
 {% method %}
 ###`PUT /profile/payout-systems/<id>`
@@ -143,7 +166,22 @@ curl -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4
 ######success response
 ```
 < HTTP/1.1 200 OK
-{"offer_change":["sms","email"],"new_offer":["email"],"new_ticket":["email"],"promo":["email"],"digest":null}
+{
+  "offer_change":[
+    "sms",
+    "email"
+  ],
+  "new_offer":[
+    "email"
+  ],
+  "new_ticket":[
+    "email"
+  ],
+  "promo":[
+    "email"
+  ],
+  "digest":null
+}
 ```
 {% endmethod %}
 
