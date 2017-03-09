@@ -44,7 +44,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/offer-categories
 {% endmethod %}
 {% method %}
 ###`GET /lists/currencies`
-Retrieve available currencies.
+Retrieve all currencies.
 {% sample lang="bash" %}
 ```bash
 curl -X GET -v http://dashboard.everad.com/v2/lists/currencies
@@ -53,6 +53,18 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/currencies
 ```
 < HTTP/1.1 200 OK
 [{"id":"usd","text":"usd"},{"id":"rub","text":"rub"},{"id":"byn","text":"byn"},{"id":"kgs","text":"kgs"},{"id":"kzt","text":"kzt"},{"id":"mdl","text":"mdl"},{"id":"azn","text":"azn"},{"id":"gel","text":"gel"},{"id":"uah","text":"uah"},{"id":"ron","text":"ron"},{"id":"thb","text":"thb"},{"id":"amd","text":"amd"}]
+```
+{% endmethod %}
+###`GET /lists/available-currencies`
+Retrieve available currencies.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/available-currencies
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"usd","text":"usd"},{"id":"rub","text":"rub"}]
 ```
 {% endmethod %}
 {% method %}
