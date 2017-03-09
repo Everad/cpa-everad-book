@@ -55,6 +55,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/currencies
 [{"id":"usd","text":"usd"},{"id":"rub","text":"rub"},{"id":"byn","text":"byn"},{"id":"kgs","text":"kgs"},{"id":"kzt","text":"kzt"},{"id":"mdl","text":"mdl"},{"id":"azn","text":"azn"},{"id":"gel","text":"gel"},{"id":"uah","text":"uah"},{"id":"ron","text":"ron"},{"id":"thb","text":"thb"},{"id":"amd","text":"amd"}]
 ```
 {% endmethod %}
+{% method %}
 ###`GET /lists/available-currencies`
 Retrieve available currencies.
 {% sample lang="bash" %}
