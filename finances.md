@@ -39,6 +39,3 @@ curl -v -X GET -H 'Content-type: application/json' -d '{"date_range":{"start":"2
 [{"amount":"-9.99","hold_amount":"9.99","date":"2017-03-02","comment":"payout creation"}]
 ```
 {% endmethod %}
-
-
-
