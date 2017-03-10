@@ -60,8 +60,3 @@ curl -X DELETE -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
-
-
-
-
-
