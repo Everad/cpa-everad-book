@@ -77,7 +77,6 @@ curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_r
 [{"ip":"95.31.18.119","referer":null,"user_agent":"curl/7.47.0","affiliate":"child1@example.com","campaign":"beer campaign","date":"2017-03-06 07:23:59","campaign_type":"novostnik","traffic_type":"bot","status":"approved","currency":"rub","payout":"100.00","id":5,"bonus":"900.00","sid1":null,"sid2":null,"sid3":null,"sid4":null,"sid5":null,"offer":"beer","landing":"landing1","transit":null,"country":"Россия","city":"Москва"}]
 ```
 {% endmethod %}
-
 {% method %}
 ###`GET /analytics/lists/<field>`
 Get avaialable *field* values (up to 5) for filtering analytics requests
