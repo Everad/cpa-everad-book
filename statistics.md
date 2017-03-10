@@ -33,6 +33,7 @@ filters: {
     sids5: [sid5] -- one of /analytics/lists/sids5,
     affiliates: [ids] -- one of `/master-account/` . available only for master accounts. by default all stats from master and children account is shown
 }
+inverse_filters: -- same parameters but inverse filtering
 ```
 
 {% sample lang="bash" %}
@@ -45,6 +46,38 @@ curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_r
 [{"hosts":"6","hits":"6","transitions":"0","accepted_conversions":"0","pending_conversions":"2","declined_conversions":"0","total_conversions":"2","invalid_conversions":"0","accepted_income":"0","pending_income":"200.00","declined_income":"0","offer":"beer"}]
 ```
 {% endmethod %}
+{% method %}
+###`GET /analytics/conversions`
+Get date ranged conversions statistics
+
+**Query parameters:**
+
+`lang` - desired response language (session language by default)
+
+**Body parameters:**
+
+```
+date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
+    start (YYYY-MM-DD HH:mm:ss.SSS)
+    end (YYYY-MM-DD HH:mm:ss.SSS)
+}
+currency -- one of user balances currency (optional)
+filters: --same as in general analytics
+inverse_filters: -- same parameters but inverse filtering
+
+```
+
+{% sample lang="bash" %}
+```bash
+curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_range": {"start": "2017-01-01", "end": "2017-02-23 23:59:59.99999"}}' -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/conversions?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"ip":"95.31.18.119","referer":null,"user_agent":"curl/7.47.0","affiliate":"child1@example.com","campaign":"beer campaign","date":"2017-03-06 07:23:59","campaign_type":"novostnik","traffic_type":"bot","status":"approved","currency":"rub","payout":"100.00","id":5,"bonus":"900.00","sid1":null,"sid2":null,"sid3":null,"sid4":null,"sid5":null,"offer":"beer","landing":"landing1","transit":null,"country":"Россия","city":"Москва"}]
+```
+{% endmethod %}
+
 {% method %}
 ###`GET /analytics/lists/<field>`
 Get avaialable *field* values (up to 5) for filtering analytics requests
@@ -74,7 +107,3 @@ curl -v -X GET -H 'Content-type: application/json' -d'{"query":"ро", "currency
 [{"id":2017370,"text":"Россия"}]
 ```
 {% endmethod %}
-
-
-
-
