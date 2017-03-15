@@ -1,16 +1,15 @@
 #Analytics
-Get your traffic and conversions statistics
+Get your traffic and conversions statistics. 
+
+Encode below parameters in using standard query string format for array and objects, e.g. `?someParam[]=someValue1&someParam[]=someValue2` for arrays and `?someParam[someKey1]=someValue1&someParam[someKey2]=someValue2` for objects.
 {% method %}
 ###`GET /analytics/general`
 Get date ranged general statistics
 
 **Query parameters:**
 
-`lang` - desired response language (session language by default)
-
-**Body parameters:**
-
 ```
+lang - desired response language (session language by default)
 date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
     start (YYYY-MM-DD HH:mm:ss.SSS)
     end (YYYY-MM-DD HH:mm:ss.SSS)
@@ -38,7 +37,7 @@ inverse_filters: -- same parameters but inverse filtering
 
 {% sample lang="bash" %}
 ```bash
-curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_range": {"start": "2017-01-01", "end": "2017-02-23 23:59:59.99999"},"groups": ["offer"], "filters": {"landings": [5]}}' -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/general?lang=ru
+curl -v -g -X GET -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/general?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999&groups[]=offer&filters[landings][]=5
 ```
 ######success response
 ```
@@ -52,11 +51,8 @@ Get date ranged conversions statistics
 
 **Query parameters:**
 
-`lang` - desired response language (session language by default)
-
-**Body parameters:**
-
 ```
+lang - desired response language (session language by default)
 date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
     start (YYYY-MM-DD HH:mm:ss.SSS)
     end (YYYY-MM-DD HH:mm:ss.SSS)
@@ -69,7 +65,7 @@ inverse_filters: -- same parameters but inverse filtering
 
 {% sample lang="bash" %}
 ```bash
-curl -v -X GET -H 'Content-type: application/json' -d'{"currency":"rub", "date_range": {"start": "2017-01-01", "end": "2017-02-23 23:59:59.99999"}}' -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/conversions?lang=ru
+curl -v -g -X GET -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' http://dashboard.everad.com/v2/analytics/conversions?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999
 ```
 ######success response
 ```
@@ -83,11 +79,8 @@ Get avaialable *field* values (up to 5) for filtering analytics requests
 
 **Query parameters:**
 
-`lang` - desired response language (session language by default)
-
-**Body parameters:**
-
 ```
+lang - desired response language (session language by default)
 date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:59.999999)
     start
     end
@@ -98,7 +91,7 @@ query -- user lookup query
 
 {% sample lang="bash" %}
 ```bash
-curl -v -X GET -H 'Content-type: application/json' -d'{"query":"ро", "currency":"rub","date_range": {"start": "2017-01-01", "end": "2017-02-24 23:59:59.99999"}}' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' http://localhost:4001/v2/analytics/lists/countries
+curl -v -g -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' http://localhost:4001/v2/analytics/lists/countries?query=po&currency=rub&date_range[end]=2017-02-23%2023:59:59.99999
 ```
 ######success response
 ```

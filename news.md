@@ -5,11 +5,11 @@ Get available news.
 ####`GET /news`
 
 Get **last** 100 available news (use `offset` to get earlier news).
-Use `types` param - one of `lists/news-types` - to select news by category and `search` param to search relevant news. Use `date_range` param to select news between needed dates.
+Use `types` query string param - one of `lists/news-types` - to select news by category and `search` param to search relevant news. Use `date_range` param to select news between needed dates. Use `offer_ids` param to filter by offers.
 
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'http://dashboard.everad.com/v2/news' -H 'content-type: application/json' -d '{"types": ["new_offer", "offer_stop", "new_landing"], "offset": 100, "search": "your input"}' | jq .
+curl -X GET -g -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'http://dashboard.everad.com/v2/news?types[]=new_offer&types[]=offer_stop&offset=100&search=test'
 ```
 ######success response
 ```
