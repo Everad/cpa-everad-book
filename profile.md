@@ -59,7 +59,8 @@ curl -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AZ7vljuUpdxc4
 ```
 < HTTP/1.1 200 OK
 {
-  "manager":"Gregory.Powlowski@hotmail.com"
+  "email":"Gregory.Powlowski@hotmail.com",
+  "skype":"regory.Powlowski"
 }
 ```
 {% endmethod %}
