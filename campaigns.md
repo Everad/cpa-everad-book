@@ -14,6 +14,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     id
     created_at
     updated_at
+    title
     is_active - flag indicating that campaign can receive traffic
     offer_id
     space_id
@@ -45,6 +46,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
 ###`POST /campaigns`
 Create a new campaign (required fields are marked with `*`).
 ```
+*title
 *offer_id - one of /offers with an `available` flag set to true
 space_id - one of /spaces
 postback_url
