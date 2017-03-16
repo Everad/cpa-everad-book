@@ -79,7 +79,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     email
     skype
     phone
-    manager
+    avatar
     is_master - flag indicating master mode (see `Master account` section)
     status - one of /lists/affiliate-statuses
 }
@@ -235,5 +235,17 @@ curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNO
   ],
   "digest":null
 }
+```
+{% endmethod %}
+{% method %}
+###`PUT /profile/avatar`
+Upload avatar (all cropping and resizing on client side).
+{% sample lang="bash" %}
+```bash
+curl -X PUT -H 'Content-type: multipart/form-data' -F avatar=@/home/user/me.jpg -v http://dashboard.everad.com/v2/profile/avatar
+```
+######success response
+```
+< HTTP/1.1 200 OK
 ```
 {% endmethod %}
