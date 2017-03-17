@@ -41,7 +41,9 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
         amount
     }],
     currency - payout currency, one of /lists/currencies,
-    available: true
+    available: true,
+    cr,
+    epc
 }]
 ```
 {% endmethod %}
