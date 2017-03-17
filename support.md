@@ -101,3 +101,15 @@ curl -X POST -v -b 'connect.sid=s%3AVvfflLue_6MkfHEN5S9N2tN9-z50Zdxf.ASQBDXkdlso
 < HTTP/1.1 201 Created
 ```
 {% endmethod %}
+{% method %}
+###`PUT /threads/:id/close`
+Close a thread.
+{% sample lang="bash" %}
+```bash
+curl -X PUT -v -b 'connect.sid=s%3AVvfflLue_6MkfHEN5S9N2tN9-z50Zdxf.ASQBDXkdlsoRIklt6ltLiEGGdr%2BtawqRF%2BhLX51apbg' 'http://dashboard.everad.com/v2/threads/15/close'
+```
+######success response
+```
+< HTTP/1.1 201 Created
+```
+{% endmethod %}
