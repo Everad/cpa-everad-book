@@ -16,6 +16,7 @@ curl -X GET -v -b 'connect.sid=s%3A7OKmdhfZr6qJ_H5OWLKJCRWfyoWAtm6q.yzfCuK0Flvj5
 < HTTP/1.1 200 OK
 [
   {
+    "id": 1,
     "created_at": "2017-03-02 15:07:51",
     "updated_at": "2017-03-02 15:07:51",
     "status": "active",
@@ -25,6 +26,7 @@ curl -X GET -v -b 'connect.sid=s%3A7OKmdhfZr6qJ_H5OWLKJCRWfyoWAtm6q.yzfCuK0Flvj5
     "offer_title": null
   },
   {
+    "id": 2,
     "created_at": "2017-03-02 15:07:51",
     "updated_at": "2017-03-02 15:07:51",
     "status": "active",
@@ -34,6 +36,7 @@ curl -X GET -v -b 'connect.sid=s%3A7OKmdhfZr6qJ_H5OWLKJCRWfyoWAtm6q.yzfCuK0Flvj5
     "offer_title": "maiores a provident"
   },
   {
+    "id": 3,
     "created_at": "2017-03-02 15:36:01",
     "updated_at": "2017-03-02 15:36:01",
     "status": "active",

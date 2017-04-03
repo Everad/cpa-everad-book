@@ -23,6 +23,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
     is_exclusive
     locations: [
         name
+        country_code
         is_own_callcenter
         price
         currency - one of /lists/currencies
