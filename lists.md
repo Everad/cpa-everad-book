@@ -213,3 +213,19 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/thread-categories?lang=ru
 [{"id":"affiliate_question","text":"вопросы вебов"},{"id":"offer_access","text":"доступ к офферу"},{"id":"admin_ticket","text":"тикет от администрации"},{"id":"new_landing_transit","text":"добавление лендингов/транзитов"}]
 ```
 {% endmethod %}
+{% method %}
+###`GET /lists/payout-credential-fields`
+Retrieve possible payout credential fields.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/payout-credential-fields?lang=ru
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"purse","text":"кошелек"},{"id":"account","text":"счет"},{"id":"card","text":"карта"}]
+```
+{% endmethod %}
+
+
+
