@@ -23,27 +23,10 @@ curl -X GET -v -b 'connect.sid=s%3A7OKmdhfZr6qJ_H5OWLKJCRWfyoWAtm6q.yzfCuK0Flvj5
     "category": "affiliate_question",
     "priority": "critical",
     "title": "умысел иллюстрирует продукт",
-    "offer_title": null
-  },
-  {
-    "id": 2,
-    "created_at": "2017-03-02 15:07:51",
-    "updated_at": "2017-03-02 15:07:51",
-    "status": "active",
-    "category": "new_landing_transit",
-    "priority": "high",
-    "title": "панладовая верлибр однородно",
-    "offer_title": "maiores a provident"
-  },
-  {
-    "id": 3,
-    "created_at": "2017-03-02 15:36:01",
-    "updated_at": "2017-03-02 15:36:01",
-    "status": "active",
-    "category": "offer_access",
-    "priority": "normal",
-    "title": "ревер индивидуально Банкротство",
-    "offer_title": "sapiente et enim"
+    "offer_title": null,
+    "viewed":false,
+    "total_posts":"2",
+    "new_posts":"1"
   }
 ]
 ```
