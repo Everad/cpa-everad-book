@@ -9,6 +9,8 @@ Return up to 5 results based on query. Only offers, available for campaign creat
 
 `lang` - query lang (optional, profile language used by default)
 
+`only_available` - flag for only connected offers lookup
+
 {% sample lang="bash" %}
 ```bash
 curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/lookups/offers?title=intox
