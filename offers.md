@@ -37,6 +37,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
     payouts: [{
         location - location name
         location_id - location id
+        country_code
         traffic_type - one of /lists/traffic-types
         traffic_source - one of /lists/traffic-sources
         amount
