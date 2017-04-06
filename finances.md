@@ -31,7 +31,7 @@ curl -v -X POST -H 'Content-type: application/json' -d '{"payout_system_id":1,"a
 List all account transactions on per-day basis for specified date range and currency
 {% sample lang="bash" %}
 ```bash
-curl -v -X GET -H 'Content-type: application/json' -d '{"date_range":{"start":"2016-01-01","end":"2017-09-09"}, "currency":"rub"}' -b 'connect.sid=s%3AqakdZrNAHauz6JDFBc3j97TN11b4EymV.g7AOMWEFfUatN125nqAnEo0K2th0gYlYX2OKhkUoosw' http://dashboard.everad.com/v2/finances/transactions
+curl -v -X GET -b 'connect.sid=s%3AqakdZrNAHauz6JDFBc3j97TN11b4EymV.g7AOMWEFfUatN125nqAnEo0K2th0gYlYX2OKhkUoosw' http://dashboard.everad.com/v2/finances/transactions?currency=rub&date_range[start]=2017-01-01&date_range[end]=2018-01-01
 ```
 ######success response
 ```
