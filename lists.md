@@ -226,6 +226,18 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/payout-credential-fields?lan
 [{"id":"purse","text":"кошелек"},{"id":"account","text":"счет"},{"id":"card","text":"карта"}]
 ```
 {% endmethod %}
-
+{% method %}
+###`GET /lists/campaign-domain-types`
+Retrieve possible domain types to be used in campaign creation/editing.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-domain-types
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"internal","text":"internal"},{"id":"external","text":"external"}]
+```
+{% endmethod %}
 
 
