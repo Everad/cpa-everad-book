@@ -85,12 +85,12 @@ is_comebacker_enabled
 *domains: [{
     *id - one of /offers/<id> domains.id   
 }],
-adv_system - one of /lists/adv-systems
+*adv_system - one of /lists/adv-systems
 ```
 
 {% sample lang="bash" %}
 ```bash
-curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external", "domains": [{"id": 1}]}' http://dashboard.everad.com/v2/campaigns
+curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external", "domains": [{"id": 1}], "adv_system": "other"}' http://dashboard.everad.com/v2/campaigns
 ```
 ######success response
 ```
