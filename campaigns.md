@@ -38,8 +38,26 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     is_comebacker_enabled,
     domains: [{
         id -  one of /offers/<id> domains.id
-    }]
+    }],
+    adv_system - one of /lists/adv-systems
 }]
+```
+{% endmethod %}
+{% method %}
+###`GET /campaigns/<id>`
+Get a campaign by id.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' http://dashboard.everad.com/v2/campaigns/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+{
+    id
+    created_at
+    ...
+}
 ```
 {% endmethod %}
 {% method %}
@@ -66,7 +84,8 @@ is_novostnik_after_submit_enabled
 is_comebacker_enabled
 *domains: [{
     *id - one of /offers/<id> domains.id   
-}]
+}],
+adv_system - one of /lists/adv-systems
 ```
 
 {% sample lang="bash" %}
