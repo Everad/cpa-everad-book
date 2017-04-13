@@ -15,6 +15,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 [{
     id
     title
+    subtitle
     category - one of /lists/offer-categories
     short_description
     description
