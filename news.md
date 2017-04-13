@@ -36,6 +36,6 @@ curl -X GET -g -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq
 ######success response
 ```
 < HTTP/1.1 200 OK
-{"published_at":"2017-03-24 16:07:23","title":"Расширение гео на оффере Микроэмульсия Нано-ботокс от морщин на Узбекистан","text":"<div>Уважаемые партнеры, рады сообщить о расширении гео на оффере <a href=\"https://everad.ru/dashboard#offer/317\">Микроэмульсия Нано-ботокс от морщин</a> на Узбекистан.</div><div>Выплата за подтвержденный заказ составляет 250 рублей.</div>","type":"custom","news_offers":[{"id":431,"title":"Микроэмульсия Нано-ботокс от морщин","image":"https://everad-attachments.s3.amazonaws.com/production/6813-1vtt2r4.png","cr":0.75,"epc":4.86,"currency":"rub"}]}
+{"published_at":"2017-03-24 16:07:23","title":"Расширение гео на оффере Микроэмульсия Нано-ботокс от морщин на Узбекистан","text":"<div>Уважаемые партнеры, рады сообщить о расширении гео на оффере <a href=\"https://everad.ru/dashboard#offer/317\">Микроэмульсия Нано-ботокс от морщин</a> на Узбекистан.</div><div>Выплата за подтвержденный заказ составляет 250 рублей.</div>","type":"custom","news_offers":[{"id":431,"title":"Микроэмульсия Нано-ботокс от морщин","image":"https://everad-attachments.s3.amazonaws.com/production/6813-1vtt2r4.png","cr":0.75,"epc":4.86,"currency":"rub","min_payout":100,"max_payout":105}]}
 ```
 {% endmethod %}
