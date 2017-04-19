@@ -227,13 +227,14 @@ curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNO
   "new_offer":[
     "email"
   ],
-  "new_ticket":[
+  "new_ticket_post":[
     "email"
   ],
   "promo":[
     "email"
   ],
-  "digest":null
+  "digest":null,
+  "payout_status_change":null
 }
 ```
 {% endmethod %}
