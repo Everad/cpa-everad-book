@@ -252,5 +252,16 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-domain-types
 [{"id":"other","text":"Other"},{"id":"target_mail","text":"MyTarget"}]
 ```
 {% endmethod %}
-
-
+{% method %}
+###`GET /lists/notification-transports`
+Retrieve possible advertising systems to be used in campaign creation/editing.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/campaign-domain-types
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":"email","text":"email"},{"id":"sms","text":"sms"},{"id":"push","text":"push"}]
+```
+{% endmethod %}
