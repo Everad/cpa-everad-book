@@ -55,3 +55,16 @@ curl -X DELETE -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mU
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+
+{% method %}
+###`POST /session/password`
+Remind password
+{% sample lang="bash" %}
+```bash
+curl -X POST -v -H 'Content-type: application/json' -d '{"email":"test@example.com"} http://dashboard.everad.com/v2/session/password
+```
+######success response
+```
+< HTTP/1.1 201 OK
+```
+{% endmethod %}
