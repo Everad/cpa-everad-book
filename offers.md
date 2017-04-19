@@ -47,7 +47,8 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
     available: true,
     cr,
     epc,
-    image
+    image,
+    display_priority - integer from 1 and above
 }]
 ```
 {% endmethod %}
