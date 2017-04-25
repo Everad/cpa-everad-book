@@ -42,3 +42,7 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 
 `/master-account` - manage your children account preferences (if your account is in `master` mode)
 
+`/oauth` - authorize third-party systems with password grant oauth2 mechanism
+
+
+
