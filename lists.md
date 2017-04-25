@@ -4,7 +4,7 @@ Endpoints for receiving different lists, used by other parts of API.
 Use `?lang=ru` or `?lang=en` query parameters in the URL to explicitly request localized versions of lists. English is set by default unless your browser language or your user profile language are supported by the API.
 ##Endpoints
 {% method %}
-###`GET /`
+###`GET /lists`
 Use this endpoint to get all non-persionalized lists with one request
 {% sample lang="bash" %}
 ```bash
