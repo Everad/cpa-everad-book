@@ -92,7 +92,7 @@ is_comebacker_enabled
 *adv_system - one of /lists/adv-systems,
 landing_snippets_codes: {
     landing: { '1': 'code'}, '1' is the external_id of the snippet from `landings snippets/list`
-    transit: { '2': 'code'}
+    transit: { '2': 'code'} - either snippet object can be empty
 }
 ```
 
