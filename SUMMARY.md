@@ -18,4 +18,5 @@
 * [Analytics](statistics.md)
 * [Lookups](lookups.md)
 * [Master account](master-account.md)
+* [Landings snippets](landings-snippets.md)
 
