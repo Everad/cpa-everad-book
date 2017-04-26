@@ -41,8 +41,8 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     }],
     adv_system - one of /lists/adv-systems,
     landings_snippets_codes: {
-        landing: [{external_id: 1, name: 'code'}], - external_id from /lists/landing-snippets
-        transit: [{external_id: 1, name: 'code'}]
+        landing: [{id: 1, text: 'code'}], - id = external_id from /lists/landing-snippets
+        transit: [{id: 1, text: 'code'}]
     } 
 }]
 ```
@@ -91,8 +91,8 @@ is_comebacker_enabled
 }],
 *adv_system - one of /lists/adv-systems,
 landings_snippets_codes: {
-    landing: [{external_id: 1, name: 'code'}], - external_id from /lists/landing-snippets
-    transit: [{external_id: 1, name: 'code'}]
+    landing: [{id: 1, text: 'code'}], - id = external_id from /lists/landing-snippets
+    transit: [{id: 1, text: 'code'}]
 }
 ```
 
