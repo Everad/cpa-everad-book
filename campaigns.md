@@ -41,9 +41,9 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     }],
     adv_system - one of /lists/adv-systems,
     landings_snippets_codes: {
-        landing: { '1': 'code' }, where 1 is the external_id from /landings-snippets/list
-        transit: { '1': 'code' }
-    }
+        landing: [{external_id: 1, name: 'code'}], - external_id from /lists/landing-snippets
+        transit: [{external_id: 1, name: 'code'}]
+    } 
 }]
 ```
 {% endmethod %}
