@@ -291,3 +291,16 @@ curl -X GET -v -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%
 [{"id":"email","text":"email"},{"id":"sms","text":"sms"},{"id":"push","text":"push"}]
 ```
 {% endmethod %}
+{% method %}
+###`GET /lists/contest-top`
+Retrieve top 100 contest users.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/contest-top
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"email":"geor**********skiy@g***l.com","rank":"1"},{"email":"Wil********y89@y***o.com","rank":"2"}]
+```
+{% endmethod %}
