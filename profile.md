@@ -250,3 +250,16 @@ curl -X PUT -H 'Content-type: multipart/form-data' -F avatar=@/home/user/me.jpg 
 < HTTP/1.1 200 OK
 ```
 {% endmethod %}
+{% method %}
+###`GET /profile/contest-standings`
+Get your current contest position.
+{% sample lang="bash" %}
+```bash
+curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNOo%2FOtmocjGRm8HZcQxw9c2W9ncpa7RM' -v http://dashboard.everad.com/v2/profile/contest-standings
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"email":"geor**********skiy@g***l.com","rank":"1","points":100500},"email":"Wil********y89@y***o.com","rank":"2","points":10050}]
+```
+{% endmethod %}
