@@ -301,6 +301,6 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/contest-top
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"email":"geor**********skiy@g***l.com","rank":"1"},{"email":"Wil********y89@y***o.com","rank":"2"}]
+[{"email":"geor**********skiy@g***l.com","rank":"1"},"email":"Wil********y89@y***o.com","rank":"2"}]
 ```
 {% endmethod %}
