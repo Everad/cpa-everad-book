@@ -15,7 +15,7 @@ date_range: { -- desired date range (with correct hours, e.g. end of day: 23:59:
     end (YYYY-MM-DD HH:mm:ss.SSS)
 }
 currency -- one of user balances currency
-groups: ['date', 'hour', 'offer', 'landing', 'transit', 'country', 'city', 'campaign', 'campaign_type', 'traffic_type', 'sid1', 'sid2', 'sid3', 'sid4', 'sid5'] -- several values available
+groups: ['date', 'hour', 'dow', 'offer', 'landing', 'transit', 'country', 'city', 'campaign', 'campaign_type', 'traffic_type', 'sid1', 'sid2', 'sid3', 'sid4', 'sid5'] -- several values available
 filters: {
     offers: [ids] -- one of /analytics/lists/offers,
     landings: [ids] -- one of /analytics/lists/landings, 
