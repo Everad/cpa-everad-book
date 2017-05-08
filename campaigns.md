@@ -94,6 +94,7 @@ landings_snippets_codes: {
     landing: [{id: 1, text: 'code'}], - id = external_id from /lists/landings-snippets
     transit: [{id: 1, text: 'code'}]
 }
+currency - one of offers.<id>.payouts currency
 ```
 
 {% sample lang="bash" %}
