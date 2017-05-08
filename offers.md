@@ -42,8 +42,8 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
         traffic_type - one of /lists/traffic-types
         traffic_source - one of /lists/traffic-sources
         amount
+        currency - one of /lists/currencies
     }],
-    currency - payout currency, one of /lists/currencies,
     available: true,
     cr,
     epc,
