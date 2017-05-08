@@ -304,3 +304,15 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/contest-top
 [{"email":"geor**********skiy@g***l.com","rank":"1"},"email":"Wil********y89@y***o.com","rank":"2"}]
 ```
 {% endmethod %}
+###`GET /lists/split-sessions/:campaign-id` - available only for active session
+Retrieve split sessions list for specified campaign.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/split-sessions/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{"id":1,"session_key":"dbdcb8a6-25b1-48f9-9fe6-084b79a36be3","campaign_id":1,"affiliate_id":1,"created_at":"2017-05-08T07:50:29.710Z","stopped_at":null}]
+```
+{% endmethod %}
