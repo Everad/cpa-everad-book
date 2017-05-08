@@ -304,6 +304,7 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/contest-top
 [{"email":"geor**********skiy@g***l.com","rank":"1"},"email":"Wil********y89@y***o.com","rank":"2"}]
 ```
 {% endmethod %}
+{% method %}
 ###`GET /lists/split-sessions/:campaign-id` - available only for active session
 Retrieve split sessions list for specified campaign.
 {% sample lang="bash" %}
