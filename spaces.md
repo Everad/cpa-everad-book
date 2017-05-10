@@ -12,7 +12,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"id":1,"title":"test space", "type":"social", "description":"my test space"}]
+[{"id":1,"title":"test space", "type":"social"}]
 ```
 {% endmethod %}
 {% method %}
