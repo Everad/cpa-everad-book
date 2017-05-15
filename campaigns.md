@@ -1,5 +1,5 @@
 #Campaigns
-Manage your campaigns. ***TODO add split sessions***
+Manage your campaigns.
 ##Endpoints
 {% method %}
 ###`GET /campaigns`
@@ -128,5 +128,27 @@ curl -X DELETE -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mU
 ######success response
 ```
 < HTTP/1.1 200 OK
+```
+{% endmethod %}
+{% method %}
+###`GET /:id/split-sessions` - available only for active session
+Retrieve split sessions list for specified campaign.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/lists/split-sessions/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[
+  {
+    "id": 1,
+    "session_key": "dbdcb8a6-25b1-48f9-9fe6-084b79a36be3",
+    "campaign_id": 11,
+    "affiliate_id": 11,
+    "created_at": "2017-05-08T07:50:29.710Z",
+    "stopped_at": null
+  }
+]
 ```
 {% endmethod %}
