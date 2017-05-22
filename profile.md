@@ -228,7 +228,10 @@ curl -X GET -b 'connect.sid=s%3AZ7vljuUpdxc4dYVpKIaSkne_18SkDvjm.WQwobn6eVQ%2BNO
   "new_offer":[
     "email"
   ],
-  "new_ticket_post":[
+  "new_thread":[
+  "email"
+  ],
+  "new_thread_post":[
     "email"
   ],
   "promo":[
