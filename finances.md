@@ -36,6 +36,6 @@ curl -v -X GET -b 'connect.sid=s%3AqakdZrNAHauz6JDFBc3j97TN11b4EymV.g7AOMWEFfUat
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"amount":"-9.99","hold_amount":"9.99","date":"2017-03-02","comment":"payout creation"}]
+[{"amount":"-9.99","hold_amount":"9.99","date":"2017-03-02","comment":"payout creation", "currency": "usd"}]
 ```
 {% endmethod %}
