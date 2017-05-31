@@ -83,6 +83,7 @@ curl -X GET -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3
     contest_points
     is_master - flag indicating master mode (see `Master account` section)
     status - one of /lists/affiliate-statuses
+    timezone - one of /list/timezones
 }
 ```
 {% endmethod %}
