@@ -94,12 +94,12 @@ landings_snippets_codes: {
     landing: [{id: 1, text: 'code'}], - id = external_id from /lists/landings-snippets
     transit: [{id: 1, text: 'code'}]
 }
-currency - one of offers.<id>.payouts currency
+*currency - one of offers.<id>.payouts currency
 ```
 
 {% sample lang="bash" %}
 ```bash
-curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external", "domains": [{"id": 1}], "adv_system": "other"}' http://dashboard.everad.com/v2/campaigns
+curl -X POST -v -H 'Content-type: application/json' -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -d '{"offer_id": 1, "landing_domain": "google.com", "landing_domain_type": "external", "domains": [{"id": 1}], "adv_system": "other", "currency": "usd"}' http://dashboard.everad.com/v2/campaigns
 ```
 ######success response
 ```
