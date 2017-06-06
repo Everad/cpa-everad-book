@@ -91,7 +91,7 @@ curl -X GET -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BC
 ######success response
 ```
 < HTTP/1.1 200 OK
-[{"id":1,"text":"example.com"},{"id":2,"text":"example.com"}]
+[{"id":1,"text":"example.com"},{"id":2,"text":"example2.com"}]
 ```
 {% endmethod %}
 {% method %}
