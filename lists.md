@@ -82,7 +82,8 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/available-currencies
 ```
 {% endmethod %}
 {% method %}
-###`GET /lists/campaign-domains` - available only for active session
+###`GET /lists/campaign-domains?adv_system=other` - available only for active session
+`adv_system` - one of `/lists/adv-systems`
 {% sample lang="bash" %}
 ```bash
 curl -X GET -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BCJrZYPoAWQM1ATFWhUX2VxgYL%2FuqEy0' -v http://dashboard.everad.com/v2/lists/campaign-domains
@@ -92,20 +93,6 @@ curl -X GET -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BC
 < HTTP/1.1 200 OK
 [{"id":1,"text":"example.com"},{"id":2,"text":"example.com"}]
 ```
-
-{% endmethod %}
-{% method %}
-###`GET /lists/novostnik-domains` - available only for active session
-{% sample lang="bash" %}
-```bash
-curl -X GET -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BCJrZYPoAWQM1ATFWhUX2VxgYL%2FuqEy0' -v http://dashboard.everad.com/v2/lists/novostnik-domains
-```
-######success response
-```
-< HTTP/1.1 200 OK
-[{"id":1,"text":"example.com"},{"id":2,"text":"example.com"}]
-```
-
 {% endmethod %}
 {% method %}
 ###`GET /lists/offer-domain-types`
