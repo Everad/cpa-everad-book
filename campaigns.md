@@ -155,11 +155,11 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/split-sessions/1
 
 
 {% method %}
-###`GET /postback-log/:id`
+###`GET /:id/postback-log`
 Retrieve postback logs for specified campaign.
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v http://dashboard.everad.com/v2/campaigns/postback-log/1
+curl -X GET -v http://dashboard.everad.com/v2/campaigns/1/postback-log
 ```
 ######success response
 ```
