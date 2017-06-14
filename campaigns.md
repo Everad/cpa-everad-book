@@ -152,3 +152,28 @@ curl -X GET -v http://dashboard.everad.com/v2/lists/split-sessions/1
 ]
 ```
 {% endmethod %}
+
+
+{% method %}
+###`GET /postback-log/:id`
+Retrieve postback logs for specified campaign.
+{% sample lang="bash" %}
+```bash
+curl -X GET -v http://dashboard.everad.com/v2/campaigns/postback-log/1
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[
+  {
+    "date": "2017-05-08T07:50:29.710Z",
+    "affiliate_id": 1,
+    "campaign_id": 11,
+    "conversion_id": 123,
+    "type": "campaign",
+    "url": "http://trololo.requestcatcher.com/...traffic_type=desktop&sid1=&status=pending&payout=2.00&currency=usd"
+    "status": 200 
+  }
+]
+```
+{% endmethod %}
