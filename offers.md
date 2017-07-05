@@ -84,3 +84,26 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 ######success response - same as general news
 
 {% endmethod %}
+
+{% method %}
+####`GET /offers/<id>/geo-stats?currency=usd&date_range...`
+Get offer's statistics by it's locations. Date range is optional, defualt to from -7 days to -1 day
+{% sample lang="bash" %}
+```bash
+curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' -v http://dashboard.everad.com/v2/offers/1/geo-stats?currency=usd
+```
+######success response
+```
+< HTTP/1.1 200 OK
+[{
+    country_code: 'UA',
+    cr: 13.989898,
+    approve: 4.0909
+}, {
+    country_code: 'RU',
+    cr: 0,
+    approve: 1.0909
+}]
+```
+
+{% endmethod %}
