@@ -1,0 +1,8 @@
+.book.with-summary .book-summary {
+    background-color: #3e424b;
+    left: 0;
+}
+ul.summary li a {
+    color: #fff;
+    font-size: 15px;
+}
