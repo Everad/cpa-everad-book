@@ -11,3 +11,6 @@ ul.summary li a {
     background-color: #3e424b!important;
     color: #fff;
 }
+.book-header .btn.lang-switcher.active {
+    background-color: #3e424b!important;
+}
