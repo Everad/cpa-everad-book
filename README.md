@@ -14,7 +14,7 @@ All incoming data is passed in **JSON** format \(with specified `Content-type: a
 
 #### Base url
 
-`http://dashboard.everad.com/v2`
+`https://dashboard.everad.com/v2`
 
 #### Methods available:
 
