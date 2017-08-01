@@ -152,6 +152,18 @@ curl -X POST -v -b 'connect.sid=s%3AVvfflLue_6MkfHEN5S9N2tN9-z50Zdxf.ASQBDXkdlso
 ```
 {% endmethod %}
 {% method %}
+###`PUT /threads/:post-id/attachments`
+Add attachments to thread post.
+{% sample lang="bash" %}
+```bash
+curl -X PUT -v -b 'connect.sid=s%3AVvfflLue_6MkfHEN5S9N2tN9-z50Zdxf.ASQBDXkdlsoRIklt6ltLiEGGdr%2BtawqRF%2BhLX51apbg' 'https://dashboard.everad.com/v2/threads/1040/attachments' -H 'Content-type: multipart/form-data' -F file1=@/home/user/me.jpg
+```
+######success response
+```
+< HTTP/1.1 200
+```
+{% endmethod %}
+{% method %}
 ###`PUT /threads/:id/close`
 Close a thread.
 {% sample lang="bash" %}
