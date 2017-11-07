@@ -283,7 +283,7 @@ curl -X GET -v https://dashboard.everad.com/v2/lists/campaign-domain-types
 Get landings snippets list to be used in campaign creation/editing. Available for active session only.
 {% sample lang="bash" %}
 ```bash
-curl -X GET -v -b 'connect.sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BCJrZYPoAWQM1ATFWhUX2VxgYL%2FuqEy0' https://dashboard.everad.com/v2/lists/landings-snippets
+curl -X GET -v -b 'cpa_sid=s%3AWt1ZtB7mMKQCcTAVs7_iPVQ5-EU6o_0Q.0aMir6l0Raw%2BCJrZYPoAWQM1ATFWhUX2VxgYL%2FuqEy0' https://dashboard.everad.com/v2/lists/landings-snippets
 ```
 ######success response
 ```

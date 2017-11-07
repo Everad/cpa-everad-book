@@ -18,7 +18,7 @@ curl -X POST -H 'Content-type: application/json' -d '{"email":"test2@example.com
 ######success response
 ```
 < HTTP/1.1 201 OK
-< set-cookie: connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
+< set-cookie: cpa_sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
 ```
 ######error response
 ```bash
@@ -36,7 +36,7 @@ curl -X PUT -H 'Content-type: application/json' -d '{"email":"test2@example.com"
 ######success response
 ```
 < HTTP/1.1 200 OK
-< set-cookie: connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
+< set-cookie: cpa_sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0; Path=/; Expires=Fri, 17 Mar 2017 08:49:53 GMT; HttpOnly
 ```
 ######error response
 ```bash
@@ -48,7 +48,7 @@ curl -X PUT -H 'Content-type: application/json' -d '{"email":"test2@example.com"
 Logout from your account.
 {% sample lang="bash" %}
 ```bash
-curl -X DELETE -v -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' https://dashboard.everad.com/v2/session
+curl -X DELETE -v -b 'cpa_sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6A2ze7Z9phswc%2FHIKqGYZ4YJyLYE0' https://dashboard.everad.com/v2/session
 ```
 ######success response
 ```

@@ -17,7 +17,7 @@ curl -X GET -b 'connect.sid=s%3AL7xQwNemYqilwERqH8tswYKfk6XfqcaC.P4qkrt3mUix3Dw6
 
 ### To test non-English lookup with curl, you'll need the following command syntax:
 
-curl -X GET -b 'connect.sid=s%3AKYaiGDA6QNmBM_S4xtY7vZJzYV_D8-8c.Yjmbs%2Fjz3ofZckJjWEjH3fTQXB%2Bk9%2BLNeeEowSvaMto' -v https://dashboard.everad.com/v2/lookups/offers -G --data-urlencode "query=тест"
+curl -X GET -b 'cpa_sid=s%3AKYaiGDA6QNmBM_S4xtY7vZJzYV_D8-8c.Yjmbs%2Fjz3ofZckJjWEjH3fTQXB%2Bk9%2BLNeeEowSvaMto' -v https://dashboard.everad.com/v2/lookups/offers -G --data-urlencode "query=тест"
 ```
 ######success response
 ```

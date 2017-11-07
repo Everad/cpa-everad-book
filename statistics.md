@@ -37,7 +37,7 @@ inverse_filters: -- same parameters but inverse filtering
 
 {% sample lang="bash" %}
 ```bash
-curl -v -g -X GET -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' https://dashboard.everad.com/v2/analytics/general?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999&groups[]=offer&filters[landings][]=5
+curl -v -g -X GET -b 'cpa_sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' https://dashboard.everad.com/v2/analytics/general?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999&groups[]=offer&filters[landings][]=5
 ```
 ######success response
 ```
@@ -65,7 +65,7 @@ inverse_filters: -- same parameters but inverse filtering
 
 {% sample lang="bash" %}
 ```bash
-curl -v -g -X GET -b 'connect.sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' https://dashboard.everad.com/v2/analytics/conversions?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999
+curl -v -g -X GET -b 'cpa_sid=s%3AvJyC27a4pDMt58b2m_7BNyW4FD9Y0UUG.gbDlAoNjiOA8jmBHC68FCWzoLtYA0Cw9xVRuzErQXAA' https://dashboard.everad.com/v2/analytics/conversions?lang=ru&currency=rub&date_range[start]=2017-01-01&date_range[end]=2017-02-23%2023:59:59.99999
 ```
 ######success response
 ```
@@ -91,7 +91,7 @@ query -- user lookup query
 
 {% sample lang="bash" %}
 ```bash
-curl -v -g -X GET -H 'Content-type: application/json' -b 'connect.sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' https://localhost:4001/v2/analytics/lists/countries?query=po&currency=rub&date_range[end]=2017-02-23%2023:59:59.99999
+curl -v -g -X GET -H 'Content-type: application/json' -b 'cpa_sid=s%3AGgkhSULlAbbYwHhCXkOH3CN35FKgQtSo.cPt18fvgg94A2G4Vo%2FmE%2Ff3d%2F%2BF8d8ifqBjjAWkUn9o' https://localhost:4001/v2/analytics/lists/countries?query=po&currency=rub&date_range[end]=2017-02-23%2023:59:59.99999
 ```
 ######success response
 ```

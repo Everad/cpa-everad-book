@@ -9,7 +9,7 @@ Use `types` query string param - one of `lists/news-types` - to select news by c
 
 {% sample lang="bash" %}
 ```bash
-curl -X GET -g -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'https://dashboard.everad.com/v2/news?types[]=new_offer&types[]=offer_stop&offset=100&search=test'
+curl -X GET -g -v -b 'cpa_sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'https://dashboard.everad.com/v2/news?types[]=new_offer&types[]=offer_stop&offset=100&search=test'
 ```
 ######success response
 ```
@@ -31,7 +31,7 @@ Get news entry by id.
 
 {% sample lang="bash" %}
 ```bash
-curl -X GET -g -v -b 'connect.sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'https://dashboard.everad.com/v2/news/1'
+curl -X GET -g -v -b 'cpa_sid=s%3AadtIeCZXVwjWFcGnsmw-BS3IVX6uhggo.a%2BvVlFq1keQhw%2F6Jlpjf4TeS%2BmTzfpbLjoM1RoDdDkc' 'https://dashboard.everad.com/v2/news/1'
 ```
 ######success response
 ```
